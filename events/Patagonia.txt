@@ -6156,51 +6156,7 @@ country_event = { # Fonte coups the weak government
 			long_name = FOP_fonte_party_long
 			name = FOP_fonte_party
 		}
-		set_party_name = {
-			ideology = radical_socialist
-			long_name = FOP_fonte2_party_long
-			name = FOP_fonte2_party
-		}
-		set_party_name = {
-			ideology = syndicalist
-			long_name = FOP_fonte2_party_long
-			name = FOP_fonte2_party
-		}
-		set_party_name = {
-			ideology = social_democrat
-			long_name = FOP_fonte2_party_long
-			name = FOP_fonte2_party
-		}
-		set_party_name = {
-			ideology = social_liberal
-			long_name = FOP_fonte2_party_long
-			name = FOP_fonte2_party
-		}
-		set_party_name = {
-			ideology = market_liberal
-			long_name = FOP_fonte2_party_long
-			name = FOP_fonte2_party
-		}
-		set_party_name = {
-			ideology = social_conservative
-			long_name = FOP_fonte2_party_long
-			name = FOP_fonte2_party
-		}
-		set_party_name = {
-			ideology = authoritarian_democrat
-			long_name = FOP_fonte2_party_long
-			name = FOP_fonte2_party
-		}
-		set_party_name = {
-			ideology = paternal_autocrat
-			long_name = FOP_fonte2_party_long
-			name = FOP_fonte2_party
-		}
-		set_party_name = {
-			ideology = national_populist
-			long_name = FOP_fonte2_party_long
-			name = FOP_fonte2_party
-		}
+		
 		create_country_leader = {
 			name = "Alfredo Fonte"
 			desc = "POLITICS_FONTE_FOP_DESC"
