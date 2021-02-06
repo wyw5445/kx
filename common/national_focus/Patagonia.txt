@@ -4900,6 +4900,7 @@ focus_tree = {
 			FOP = {
 				country_event = fopfonte.22
 			}
+			set_cosmetic_tag = FOP_Fonte
 			add_ideas = FOP_king_idea
 		}
 	}

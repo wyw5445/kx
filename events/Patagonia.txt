@@ -6172,7 +6172,7 @@ country_event = { # Fonte coups the weak government
 			ideology = totalist
 			popularity = 1
 		}
-		set_cosmetic_tag = FOP_Fonte
+		
 		hidden_effect = {
 			add_ideas = FOP_Alfredo_Fonte_hog_tot
 		    remove_ideas_with_trait = foreign_minister

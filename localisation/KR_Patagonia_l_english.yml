@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 ### Leaders ###
 POLITICS_ANTONIO_SOTO_DESC:0 "Antonio Soto Canalejo was born in 1897 in the city of Ferrol, La Coruña province, Spain. His father died when he was very young, and he was forced to move to Argentina with his brother when he was just thirteen years old. Already as a teenager, he was exposed to the anarchist ideals by the people he met while he travelled with the 'Serrano-Mendoza' travelling theatre company. He participated in a strike of trade employees in Trelew, Chubut province, that turned into an open rebellion, with him fighting alongside the strikers. Although the revolt was crushed, he gained valuable experience for his future uprising.\n\nWhen the Second Patagonic Strike came about, after wealthy landlords decided to ignore the requests that had been agreed between the strikers and the government, he decided to join up with the strikers and organize their insurrection. The strike led up to a stand-off at the 'La Anita' farm, where Soto rallied the disillusioned workers with a fiery speech and managed to hold back an army detachment lead by Lieutenant Colonel Varela. His forces began growing with simple workers who wanted better working conditions and eager idealists alike, slowly but steadily managing to drive the army to a stalemate until the affair became public and the government called off the military. 'El Gallego' has become a legendary figure for the workers in the FOP and anarchists worldwide, and having allied with Emilio Lopez Arango in order to secure the stability of the USA, much is expected from the chairman for the following years..."
@@ -436,7 +436,7 @@ FOP_diplomatic_connections:0 "Diplomatic Connections"
 FOP_diplomatic_connections_desc:0 "Our King, while in his lifelong exile, spent much of his time making friends in high and low places across the courts and palaces in both sides of the Atlantic. Even more important, news of our people's plight, which only grew under the rule of the bandits of the Worker's Front, has garnered great amounts of good will among foreigners, and such, our struggle to rebuild the nation will find many ready allies across the world."
 
 ### Fonte's Coup ###
-FOP_fonte_coup:0 "§RFonte's Coup§!"
+FOP_fonte_coup:0 "§RPatagonia's Strong Man!§!"
 FOP_fonte_coup_desc:0 "Alfredo Fonte has successfully executed a coup against the weak government, and will soon bring a new age of greatness to South America!"
 FOP_military_state:0 "Military State"
 FOP_military_state_desc:0 "Our current nation is weak and useless for war. We must change this, even if that means some may suffer. It is time to upgrade our bandit legions into war-ready soldiers!"
@@ -1479,19 +1479,9 @@ fopking.02.c:0 "We Should Strive for Tolerance in our Society, Let Each Faith Ha
 fopfonte.18.t:0 "Officers speak to us about Alfredo Fonte"
 fopfonte.18.d:0 "Today, some of our officers have approached us to discuss Alfredo Fonte. He lead his own forces in helping us rebel against the Argentine government, but he was always very brutal about it. He was the one who triggered the uprising when negotiations were still possible. Since then, there have always been rumours that he has been travelling the country with his band of mercenaries, raiding villages and pillaging homes. It appears these officers are here to confirm these rumours, stating that some of their troops had been raided by a group of bandits lead by Fonte. It would be too bold to just arrest him now, for technically we have not caught him doing anything illegal. Also, he did also help us with the revolution. However, we will keep an eye on him."
 fopfonte.18.a:0 "This can't be true..."
-fopfonte.19.t:0 "Fonte captured while raiding farmers"
-fopfonte.19.d:0 "After recent reports that Alfredo Fonte has been raiding rural villages, we sent troops out to multiple villages to keep an eye out for any raids. Sure enough, after a few weeks, one of our regiments reported back to us, saying they stopped a raid from a band of mercenaries, headed by Alfredo Fonte. If we wanted to now, we could imprison him, or even execute him for his bad deeds. However, we must remember that he was someone who helped us through the revolution, so by imprisoning or killing him we will lose much political support."
-fopfonte.19.a:0 "He should be executed!"
-fopfonte.19.b:0 "Prison for the criminal."
-fopfonte.19.c:0 "We should just let him off with a warning."
-fopfonte.20.t:0 "Fonte caught again raiding rural village"
-fopfonte.20.d:0 "Previously, we caught Alfredo Fonte raiding some farming village, and let him off with a warning. However, it appears he didn't even listen to our warning, for he has been caught once again raiding a rural village with his group of bandits. Surely now, it is time to bring an end to his reign of terror."
-fopfonte.20.a:0 "He must be executed!"
-fopfonte.20.b:0 "Lock him up and throw away the key!"
-fopfonte.20.c:0 "He doesn't need prison, just another warning."
-fopfonte.21.t:0 "Alfredo Fonte performs a Coup against the government!"
-fopfonte.21.d:0 "Alfredo Fonte, leader of an army of mercenaries and bandits, has marched into the capital today with his whole division there. He has declared that the current government is weak and ineffective, and without his intervention, they would fall quickly to the Argentinians. He has executed many civilians and government officials, and has sent the rest of the government into exile. The people now fear that they will suffer under Forte's dictatorship."
-fopfonte.21.a:0 "Glory to Fonte!"
+fopfonte.21.t:0 "The Coup"
+fopfonte.21.d:0 "(this is a temporal loc until an actual writer/slave is found) "
+fopfonte.21.a:0 "Congratulations, Chairman Fonte."
 fopfonte.22.t:0 "The Bandit King..."
 fopfonte.22.d:0 "Alfredo Fonte has long been a man of infamy, a dastardly raider to some and a revolutionary anti-hero to others. Growing up in poverty, Fonte learnt from an early age that in order to survive you must take what you wish. And so as he grew older he learnt to despise the oligarchic regimes of Argentina who abused and oppressed his people. In defiance he fought back by raiding government buildings and using violence against the bourgeoisie, accumulating a loyal gang of proletariat bandits and raiders over time. Now in control of Patagonia he has been nicknamed the ''Bandit King'' for his dictatorial enforcement of pillaging and looting of the wealthy and well-off members of society."
 fopfonte.22.a:0 "Hail to Fonte!"
@@ -1499,9 +1489,9 @@ fopfonte.23.t:0 "Comrade Fonte Declares the Northern Conquests!"
 fopfonte.23.d:0 "Comrade Fonte has addressed his followers by delivering an important speech, declaring the reactionary regimes of South America to be unjust and an immediate threat to the revolution! Since rising to power, Fonte has put in significant resources into training his band of thugs so that they may form a competent fighting force. The culmination of this training appears to be to prepare his army for intense combat with the majority of the nation’s neighbours..."
 fopfonte.23.a:0 "We march north!"
 
-fopfonte.172.t:0 "Fonte Launches Totalist Coup in Patagonia"
-fopfonte.172.d:0 "With war raging between Carlés' Argentina and Chilean-backed Patagonia a power vacuum in the capital Puerto Madryn was almost inevitable with most Red soldiers away at the frontlines. In an astounding turn of events infamous bandolero Alfredo Fonte 'El Toscano' and a collection of mercenaries, misfits and leftist radicals seized the capital, declaring the 'spinelessness of the socialist government' at an end.\n\nExecuting many relatively moderate socialists and syndicalists, Fonte's extreme Totalist faction has called for a more harshly promulgated war against Buenos Aires, quickly implementing a number of brutal war measures. It is unknown whether Patagonia will survive the turbulence of such a regime change."
-fopfonte.172.a:0 "Somewhat embarrassing."
+fopfonte.172.t:0 "Alfredo Fonte is declared Chairman of the Federation of Patagonia"
+fopfonte.172.d:0 "With war raging between Carlés' Argentina and Chilean-backed Patagonia while on a Meeting with Local Union leaders Antonio Soto was arrested by members of the Comitte for the Institution of Charter Totalism in Patagonia and was forced to give up power, and Alfredo Fonte was declared Chairman of the Federation of Patagonia. Fonte was a Bandit turned Commander turned Totalist advocate who is known for the intense hatred of the Buenos Aires government and the Centralization of Power to a Central Committee, there has been reports of disidents fleeing to Chile and crossing the frontier to Argentina."
+fopfonte.172.a:0 "An interesting development on South America..."
 
 
 ### Decisions ###
@@ -1783,6 +1773,6 @@ FOP_national_populist:0 "Araucania"
 FOP_national_populist_ADJ:0 "Araucanian"
 FOP_national_populist_DEF:0 "Araucania"
 
-FOP_Fonte_totalist:0 "Revolutionary Bandit State"
-FOP_Fonte_totalist_ADJ:0 "Bandido"
-FOP_Fonte_totalist_DEF:0 "the Revolutionary Bandit State"
+FOP_Fonte_totalist:0 "Central Syndicalist Union of Patagonia"
+FOP_Fonte_totalist_ADJ:0 "Patagonian"
+FOP_Fonte_totalist_DEF:0 "the Central Syndicalist Union of Patagonia"
