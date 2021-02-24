@@ -1,0 +1,212 @@
+add_namespace = KX_JUCHE_FONTE
+
+	country_event = { # Fonte Parade
+		id = KX_JUCHE_FONTE.1
+		title = KX_JUCHE_FONTE.1.t
+		desc = KX_JUCHE_FONTE.1.d
+		is_triggered_only = yes
+		fire_only_once = yes
+		
+			option = {
+			name = KX_JUCHE_FONTE.1.a
+			#put your shit here
+			}
+		option = { # we are buggered
+		name = KX_JUCHE_FONTE.1.b
+		add_stability = -0.30
+		}
+		
+		create_country_leader = {
+			name = "Micaela Feldman"
+			desc = "POLITICS_MICAELA_FELDMAN_FONTE_DESC"
+			picture = "Portrait_FOP_Micaela_Feldman.tga"
+			expire = "1965.1.1"
+			ideology = totalist_subtype
+			traits = {}
+		}
+		set_politics = {
+			ruling_party = totalist
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = 1
+		}
+		
+		hidden_effect = {
+
+		}
+
+	}	}
+
+	country_event = { # Italy is Syndie so they dont give us a general
+		id = KX_JUCHE_FONTE.2
+		title = KX_JUCHE_FONTE.2.t
+		desc = KX_JUCHE_FONTE.2.d
+		is_triggered_only = yes
+		fire_only_once = yes
+		
+			option = {
+			name = KX_JUCHE_FONTE.2.a
+			#put your shit here
+			}
+			add_manpower = 1000
+	}
+
+	country_event = { # TODO Put name here
+		id = KX_JUCHE_FONTE.3
+		title = KX_JUCHE_FONTE.3.t
+		desc = KX_JUCHE_FONTE.3.d
+		is_triggered_only = yes
+		fire_only_once = yes
+		
+			option = {
+			name = KX_JUCHE_FONTE.3.a
+			#put your shit here
+			}
+	}
+
+	country_event = { # TODO Put name here
+		id = KX_JUCHE_FONTE.4
+		title = KX_JUCHE_FONTE.4.t
+		desc = KX_JUCHE_FONTE.4.d
+		is_triggered_only = yes
+		fire_only_once = yes
+		
+			option = {
+			name = KX_JUCHE_FONTE.4.a
+			#put your shit here
+			}
+	}
+
+	country_event = { # TODO Put name here
+		id = KX_JUCHE_FONTE.5
+		title = KX_JUCHE_FONTE.5.t
+		desc = KX_JUCHE_FONTE.5.d
+		is_triggered_only = yes
+		fire_only_once = yes
+		
+			option = {
+			name = KX_JUCHE_FONTE.5.a
+			#put your shit here
+			}
+	}
+
+	country_event = { # TODO Put name here
+		id = KX_JUCHE_FONTE.6
+		title = KX_JUCHE_FONTE.6.t
+		desc = KX_JUCHE_FONTE.6.d
+		is_triggered_only = yes
+		fire_only_once = yes
+		
+			option = {
+			name = KX_JUCHE_FONTE.6.a
+			#put your shit here
+			}
+	}
+
+	country_event = { # TODO Put name here
+		id = KX_JUCHE_FONTE.7
+		title = KX_JUCHE_FONTE.7.t
+		desc = KX_JUCHE_FONTE.7.d
+		is_triggered_only = yes
+		fire_only_once = yes
+		
+			option = {
+			name = KX_JUCHE_FONTE.7.a
+			#put your shit here
+			}
+	}
+
+	country_event = { # TODO Put name here
+		id = KX_JUCHE_FONTE.8
+		title = KX_JUCHE_FONTE.8.t
+		desc = KX_JUCHE_FONTE.8.d
+		is_triggered_only = yes
+		fire_only_once = yes
+		
+			option = {
+			name = KX_JUCHE_FONTE.8.a
+			#put your shit here
+			}
+	}
+
+	country_event = { # TODO Put name here
+		id = KX_JUCHE_FONTE.9
+		title = KX_JUCHE_FONTE.9.t
+		desc = KX_JUCHE_FONTE.9.d
+		is_triggered_only = yes
+		fire_only_once = yes
+		
+			option = {
+			name = KX_JUCHE_FONTE.9.a
+			#put your shit here
+			}
+	}
+
+	country_event = { # TODO Put name here
+		id = KX_JUCHE_FONTE.10
+		title = KX_JUCHE_FONTE.10.t
+		desc = KX_JUCHE_FONTE.10.d
+		is_triggered_only = yes
+		fire_only_once = yes
+		
+			option = {
+			name = KX_JUCHE_FONTE.10.a
+			#put your shit here
+			}
+	}
+
+	country_event = { # TODO Put name here
+		id = KX_JUCHE_FONTE.11
+		title = KX_JUCHE_FONTE.11.t
+		desc = KX_JUCHE_FONTE.11.d
+		is_triggered_only = yes
+		fire_only_once = yes
+		
+			option = {
+			name = KX_JUCHE_FONTE.11.a
+			#put your shit here
+			}
+	}
+
+	country_event = { # TODO Put name here
+		id = KX_JUCHE_FONTE.12
+		title = KX_JUCHE_FONTE.12.t
+		desc = KX_JUCHE_FONTE.12.d
+		is_triggered_only = yes
+		fire_only_once = yes
+		
+			option = {
+			name = KX_JUCHE_FONTE.12.a
+			#put your shit here
+			}
+	}
+	
+	news_event = {
+		id = KX_JUCHE_FONTE.13
+		title = KX_JUCHE_FONTE.13.t
+		desc = KX_JUCHE_FONTE.13.d
+		picture = GFX_news_event_PAR_coup
+
+		major = yes
+
+		is_triggered_only = yes
+
+		trigger = {
+			wants_world_news = yes
+		}
+
+		show_major = {
+			NOT = {
+				tag = FOP
+			}
+			OR = {
+				regional_north_america_news = yes
+				regional_south_america_news = yes
+			}
+		}
+
+		option = {
+			name = KX_JUCHE_FONTE.13.a
+		}
+	}
