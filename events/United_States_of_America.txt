@@ -2701,6 +2701,7 @@ country_event = { # The 1936 Election - Coalition
 				traits = { the_fighting_liberal }
 			}
 		}
+		set_global_flag = USA_NORRIS_PRES
 		set_politics = {
 			ruling_party = social_democrat
 			election_frequency = 48
@@ -5740,16 +5741,8 @@ country_event = { # March on Detroit
 	title = ustates.85.t
 	desc = ustates.85.d
 	picture = GFX_report_event_generic_riot
-    fire_only_once = yes
 
 	trigger = {
-		tag = USA
-		date > 1937.3.1
-		has_country_flag = USA_had_1936_election
-		OR = {
-		has_government = social_liberal
-		has_government = market_liberal
-		}
 		OR = {
 		NOT = { has_country_flag = USA_macarthur_coup } 
 		NOT = { has_country_flag = USA_negotiations_begun }
@@ -5760,8 +5753,12 @@ country_event = { # March on Detroit
 	}
 	
 	mean_time_to_happen = {
-		days = 10
+	days = 5
 	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
 
 	option = {
 		name = ustates.85.a
@@ -5771,6 +5768,7 @@ country_event = { # March on Detroit
 		}
 	}
 }
+
 
 country_event = { # Counter Protest Organized
 	id = ustates.86
@@ -7916,6 +7914,21 @@ country_event = { # War Propaganda League Requests Radio America
 		add_political_power = -25
 		add_popularity = { ideology = paternal_autocrat popularity = 0.03 }
 		add_war_support = 0.05
+		create_corps_commander = {# Ronald Reagan
+			name = "Ronald Reagan"
+			portrait_path = "gfx/leaders/USA/Portrait_USA_Ronald_Reagan_Military.tga"
+			traits = {
+				politically_connected
+				inspirational_leader
+				media_personality
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			id = 4997
+		}
 		hidden_effect = {
 		set_country_flag = USA_Radio_Reagan
 		}
@@ -9908,6 +9921,7 @@ country_event = { # 1940 Progressive Primary
 		NOT = {
 			has_country_flag = USA_had_1940_election
 		}
+		has_global_flag = USA_civil_war_avoided_flag
 	}
 
 	fire_only_once = yes
@@ -10086,6 +10100,7 @@ country_event = { # 1940 Republican Primary
 		NOT = {
 			has_country_flag = USA_had_1940_election
 		}
+		has_global_flag = USA_civil_war_avoided_flag
 	}
 
 	fire_only_once = yes
@@ -10241,6 +10256,7 @@ country_event = { # 1940 Democrat Primary
 		NOT = {
 			has_country_flag = USA_had_1940_election
 		}
+		has_global_flag = USA_civil_war_avoided_flag
 	}
 
 	fire_only_once = yes
@@ -10376,6 +10392,7 @@ country_event = { # 1940 Election
 		NOT = {
 			has_country_flag = USA_macarthur_coup
 		}
+		has_global_flag = USA_civil_war_avoided_flag
 	}
 
 	is_triggered_only = yes
@@ -11997,7 +12014,7 @@ country_event = { # 1948 Liberal Democrat Primary
 		}
 	}
 	option = { # President is re-elected
-		name = ustates.211.e
+		name = ustates.211.c
 		trigger = {
 			has_government = market_liberal
 			has_country_flag = USA_1944_election_democrat
@@ -12593,6 +12610,21 @@ country_event = { # 1952 Progressive Primary
 			NOT = {
 				has_government = social_democrat
 			}
+			has_global_flag = USA_civil_war_avoided_flag
+		}
+	}
+	desc = { # Progressive Party does not have the Presidency
+		text = ustates.214.d.not_president_reagan
+		trigger = {
+			NOT = {
+				has_government = social_democrat
+				has_global_flag = USA_civil_war_avoided_flag
+				has_global_flag = USA_civil_war_avoided_flag
+			}
+			has_country_flag = USA_Radio_Reagan
+			NOT = {
+				has_country_flag = USA_NORRIS_PRES
+			}
 		}
 	}
 	picture = GFX_report_event_USA_congress
@@ -12645,6 +12677,28 @@ country_event = { # 1952 Progressive Primary
 		}
 		hidden_effect = {
 			set_country_flag = USA_1952_progressive_primary_taylor
+		}
+	}
+	option = { # Ronald Reagan
+		name = ustates.214.e
+		trigger = {
+			OR = {
+				NOT = {
+					has_government = social_democrat
+				}
+				NOT = {
+					has_country_flag = USA_1948_election_progressive
+				}
+				has_country_flag = USA_1944_election_progressive
+			}
+			has_country_flag = USA_Radio_Reagan
+			NOT = {
+				has_global_flag = USA_civil_war_avoided_flag
+				has_country_flag = USA_NORRIS_PRES
+			}
+		}
+		hidden_effect = {
+			set_country_flag = USA_1952_progressive_primary_reagan
 		}
 	}
 	option = { # Keep the Presidency
@@ -12724,6 +12778,16 @@ country_event = { # 1952 Republican Primary
 			}
 		}
 	}
+	desc = { # Republican Party does not have the Presidency
+		text = ustates.215.d.not_president_reagan
+		trigger = {
+			NOT = {
+				has_government = social_liberal
+			}
+			has_country_flag = USA_Radio_Reagan
+			has_country_flag = USA_NORRIS_PRES
+		}
+	}
 	picture = GFX_report_event_USA_congress
 
 	trigger = {
@@ -12792,6 +12856,26 @@ country_event = { # 1952 Republican Primary
 		}
 		hidden_effect = {
 			set_country_flag = USA_1952_republican_primary_president
+		}
+	}
+	option = { # Reagan
+		name = ustates.205.g
+		trigger = {
+			OR = {
+				NOT = { has_government = social_liberal }
+				NOT = { has_country_flag = USA_1948_election_republican }
+				has_country_flag = USA_1944_election_republican
+				has_country_leader = {
+					ruling_only = yes
+					name = "Herbert Hoover"
+				}
+			}
+			has_country_flag = USA_NORRIS_PRES
+			has_country_flag = USA_Radio_Reagan
+			NOT = { has_country_flag = USA_More_terms_for_herb }
+		}
+		hidden_effect = {
+			set_country_flag = USA_1952_republican_primary_reagan
 		}
 	}
 	option = { # HOOOOOOOVER
@@ -13040,6 +13124,19 @@ country_event = { # 1952 election
 					traits = { figurehead_president }
 				}
 			}
+			if = { # Ronald Reagan
+				limit = {
+					has_country_flag = USA_1952_progressive_primary_reagan
+				}
+				create_country_leader = {
+					name = "Ronald Reagan"
+					desc = "POLITICS_RONALD_REAGAN_DESC"
+					picture = "Portrait_USA_Ronald_Reagan.tga"
+					expire = "1965.1.1"
+					ideology = social_democrat_subtype
+					traits = { radio_star }
+				}
+			}
 			if = { # John W. Bricker
 				limit = {
 					has_country_flag = USA_1952_republican_primary_bricker
@@ -13064,6 +13161,19 @@ country_event = { # 1952 election
 					expire = "1965.1.1"
 					ideology = social_liberal_subtype
 					traits = { reluctant_interventionist }
+				}
+			}
+			if = { # Ronald Reagan
+				limit = {
+					has_country_flag = USA_1952_republican_primary_reagan
+				}
+				create_country_leader = {
+					name = "Ronald Reagan"
+					desc = "POLITICS_RONALD_REAGAN_DESC"
+					picture = "Portrait_USA_Ronald_Reagan.tga"
+					expire = "1965.1.1"
+					ideology = social_liberal_subtype
+					traits = { radio_star }
 				}
 			}
 			if = { # Dwight D. Eisenhower
@@ -13158,6 +13268,15 @@ country_event = { # 1952 election
 				add_ideas = USA_Hjalmar_Petersen_eco_sde
 				add_ideas = USA_Konrad_Knute_Solberg_sec_sde
 			}
+			if = { # Reagan
+				limit = {
+					has_country_flag = USA_1952_progressive_primary_reagan
+				}
+				add_ideas = USA_Glen_H_Taylor_hog_sde
+				add_ideas = USA_Hjalmar_Petersen_eco_sde
+				add_ideas = USA_Hjalmar_Petersen_eco_sde
+				add_ideas = USA_Konrad_Knute_Solberg_sec_sde
+			}
 			else = {
 				add_ideas = USA_Philip_La_Follette_hog_sde
 				add_ideas = USA_Hjalmar_Petersen_eco_sde
@@ -13196,6 +13315,15 @@ country_event = { # 1952 election
 					has_country_flag = USA_1952_republican_primary_stassen
 				}
 				add_ideas = USA_Harold_Stassen_hog_sli
+				add_ideas = USA_John_Bassett_Moore_for_sli
+				add_ideas = USA_Vannevar_Bush_eco_sli
+				add_ideas = USA_Fannie_Coralie_Perkins_sec_sli
+			}
+			if = { # Harold Stassen
+				limit = {
+					has_country_flag = USA_1952_republican_primary_reagan
+				}
+				add_ideas = USA_John_W_Bricker_hog_sli
 				add_ideas = USA_John_Bassett_Moore_for_sli
 				add_ideas = USA_Vannevar_Bush_eco_sli
 				add_ideas = USA_Fannie_Coralie_Perkins_sec_sli
@@ -14211,13 +14339,14 @@ country_event = { # New England has been returned to us
 
 	trigger = {
 	NOT = {
-	has_global_flag =USA_civil_war_avoided_flag
+	has_global_flag = USA_civil_war_avoided_flag
 	}
 	NOT = {
 		NEE = {
 		is_ai = no
 		}
 	}
+	has_global_flag = USA_civil_war_over_flag
 	}
 
 	option = {
@@ -17807,7 +17936,7 @@ country_event = {
 		set_country_flag = USA_establishment_supported
 		hidden_effect = {
 			country_event = { id = ustates.503 days = 5 }
-			country_event = { id = ustates.508 days = 10 }
+			set_global_flag = USA_the_bill_failed
 		}
 	}
 	option = {
@@ -17815,7 +17944,7 @@ country_event = {
 		set_country_flag = USA_longists_supported
 		hidden_effect = {
 			country_event = { id = ustates.504 days = 5 }
-			country_event = { id = ustates.507 days = 10 }
+			set_global_flag = USA_the_bill_passed
 		}
 	}
 	option = {
@@ -17823,7 +17952,7 @@ country_event = {
 		set_country_flag = USA_socialists_supported
 		hidden_effect = {
 			country_event = { id = ustates.505 days = 5 }
-			country_event = { id = ustates.507 days = 10 }
+			set_global_flag = USA_the_bill_passed
 		}
 	}
 }
@@ -17914,7 +18043,7 @@ country_event = {
 		}
 		}
 		USA = {
-			country_event = { id = ustates.507 days = 15 }
+			country_event = { id = ustates.507 days = 3 }
 		}
 	}
 }
@@ -17942,7 +18071,7 @@ country_event = {
 			}
 		}
 		USA = {
-			country_event = { id = ustates.508 days = 15 }
+			country_event = { id = ustates.508 days = 3 }
 		}
 	}
 }
@@ -19437,7 +19566,7 @@ country_event = {# Creation of a Sniper Program pt.2
 		ai_chance = {
 			factor = 50
 		}
-		army_experience = 20
+		navy_experience = 20
 	}
 } 
 

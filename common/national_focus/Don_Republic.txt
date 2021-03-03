@@ -302,7 +302,7 @@ focus_tree = {
 	focus = {
 		id = DKB_fol_pol
 		icon = GFX_goal_foreign_diplomacy
-		cost = 5
+		cost = 1
 		ai_will_do = {
 			factor = 100
 		}
@@ -313,10 +313,7 @@ focus_tree = {
 		x = -3
 		y = 5
 		completion_reward = {
-			country_event = {
-				id = dkbfor.25
-				days = 2
-			}
+			war_support_factor = 0.15
 		}
 		
 	}
@@ -326,6 +323,16 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = DKB_fol_pol
+		}
+		available = {
+			KUB = {
+			exists = yes
+			}
+		}
+		bypass = {
+			KUB = {
+			exists = no
+			}
 		}
 		ai_will_do = {
 			factor = 100
@@ -354,6 +361,16 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = DKB_fol_pol
+		}
+		available = {
+			KLY = {
+			exists = yes
+			}
+		}
+		bypass = {
+			KLY = {
+			exists = no
+			}
 		}
 		ai_will_do = {
 			factor = 100
@@ -923,6 +940,16 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = DKB_fol_pol
+		}
+		available = {
+			MTR = {
+			exists = yes
+			}
+		}
+		bypass = {
+			MTR = {
+			exists = no
+			}
 		}
 		ai_will_do = {
 			factor = 100

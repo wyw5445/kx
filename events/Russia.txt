@@ -109,7 +109,7 @@ country_event = { #Kerensky
 	id = russia.5
 	title = russia.5.t
 	desc = russia.5.d
-	picture = GFX_POL_assassination
+	picture = GFX_report_event_POL_assassination
 	is_triggered_only = yes
 	fire_only_once = yes
 	
@@ -1604,14 +1604,7 @@ country_event = { #Unlock Foreign
 		}
 	}
 	fire_only_once = yes
-	trigger = {
-		tag = RUS
-		date > 1937.02.01
-		date < 1937.02.15
-		NOT = {
-			has_country_flag = RUS_REVOL
-		}
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = russia.55.a
@@ -13295,7 +13288,7 @@ country_event = { #royal reject
 			has_country_flag = RUS_selectdenikin
 		}
 		RUS_increase_wrangel = yes
-		custom_effect_tooltip = RUS_wrangel_increase
+		custom_effect_tooltip = RUS_denikin_increase
 		set_country_flag = RUS_denikin_choose_republic
 	}
 	option = {
@@ -13307,7 +13300,7 @@ country_event = { #royal reject
 			factor = 100
 		}
 		RUS_increase_denikin = yes
-		custom_effect_tooltip = RUS_denikin_increase
+		custom_effect_tooltip = RUS_wrangel_increase
 		set_country_flag = RUS_wrangel_choose_tsar
 	}
 }
@@ -16964,7 +16957,7 @@ country_event = {#Army
 			}
 		}
 		custom_effect_tooltip = vkps_increase
-		
+		set_country_flag = SOV_red_army_congress
 		modify_country_flag = {
 			flag = vkps_value
 			value = 1
@@ -16995,6 +16988,7 @@ country_event = {#Army
 		}
 		custom_effect_tooltip = decists_increase
 		custom_effect_tooltip = nsp_increase
+		set_country_flag = SOV_red_guard_congress
 		modify_country_flag = {
 			flag = nsp_value
 			value = 1
@@ -20144,7 +20138,7 @@ country_event = { #Socialist Victory in the Civil War (GER)
 				has_socialist_government = no
 				NOT = {
 					has_government = national_populist
-					POL_sikorski_in_power = yes
+					POL_zegota_in_power = yes
 				}
 			}
 			country_event = {
@@ -30797,7 +30791,18 @@ country_event = { #Kvzhd
 	title = rusfor.1401.t
 	desc = rusfor.1401.d
 	is_triggered_only = yes
-	
+
+	trigger = {
+	NOT = {
+		883 = {
+			OR = {
+				is_owned_by = TRM
+				is_owned_by = RUS
+				}
+			}
+		}
+	}
+
 	option = {
 		name = rusfor.1401.a
 		if = {
@@ -30811,7 +30816,7 @@ country_event = { #Kvzhd
 					}
 				}
 			}
-			owner = {
+			var:883.owner = {
 				country_event = {
 					id = rusfor.1402
 					days = 2
@@ -30825,6 +30830,17 @@ country_event = { #Kvzhd
 	title = rusfor.1402.t
 	desc = rusfor.1402.d
 	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			OR = {
+			tag = RUS
+			tag = TRM
+			tag = SOV
+			}
+		}
+	}	
+
 	is_triggered_only = yes
 	
 	option = {

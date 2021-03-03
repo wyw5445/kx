@@ -2813,6 +2813,7 @@ country_event = { ### Long Accepts ###
 	fire_only_once = yes
 	
 	option = {
+	name = amcivwar.5003.a
 	add_stability = 0.03
 	hidden_effect = {
 	TEX = {
@@ -2837,6 +2838,7 @@ country_event = { ### CSA Accepts ###
 	fire_only_once = yes
 	
 	option = {
+	name = amcivwar.5004.a
 	add_stability = 0.03
 	hidden_effect = {
 	CSA = {
@@ -2859,6 +2861,7 @@ country_event = { ### Voting Begins ###
 	is_triggered_only = yes
 	
 	option = {
+	name = amcivwar.5005.a
 	add_political_power = 25
 	add_stability = 0.05
 	increase_ruling_party_popularity_by_5 = yes
@@ -2962,6 +2965,11 @@ country_event = { # Results are in
 	transfer_troops = no
 			}
 		}
+		hidden_effect = {
+		CAL = {
+			change_tag_from = TEX
+			}
+		}
 	}
 	if = {
 	limit = {
@@ -2974,6 +2982,12 @@ country_event = { # Results are in
 	annex_country = {
 	target = CSA
 	transfer_troops = no
+			}
+		}
+		hidden_effect = {
+		CAL = {
+			change_tag_from = CSA
+			}
 		}
 	}
 	if = {
@@ -2989,7 +3003,6 @@ country_event = { # Results are in
 			}
 		}
 	}
-	}
 	option = {
 	name = amcivwar.5006.b
 	trigger = {
@@ -3002,8 +3015,13 @@ country_event = { # Results are in
 	annex_country = {
 	target = CAL
 	transfer_troops = no
+			}
 		}
-	}
+		hidden_effect = {
+		TEX = {
+			change_tag_from = CAL
+			}
+		}
 	if = {
 	limit = {
 	CSA = {
@@ -3015,7 +3033,12 @@ country_event = { # Results are in
 	annex_country = {
 	target = CSA
 	transfer_troops = no
-	}
+			}
+		}
+		hidden_effect = {
+		TEX = {
+			change_tag_from = CSA
+			}
 		}
 	}
 	if = {
@@ -3046,7 +3069,12 @@ country_event = { # Results are in
 	annex_country = {
 	target = CAL
 	transfer_troops = no
+		}
 	}
+	hidden_effect = {
+		CSA = {
+			change_tag_from = CAL
+			}
 		}
 	if = {
 	limit = {
@@ -3059,10 +3087,27 @@ country_event = { # Results are in
 	annex_country = {
 	target = TEX
 	transfer_troops = no
+			}
 		}
+		hidden_effect = {
+		CSA = {
+			change_tag_from = TEX
+			}
 		}
 	}
+	if = {
+	limit = { tag = CAL }
+	CSA = {
+		change_tag_from = CAL
+		}
 	}
+	if = {
+	limit = { tag = TEX }
+	CSA = {
+		change_tag_from = TEX
+		}
+	}
+}
 }
 
 ### Last Men standing ###
@@ -4091,7 +4136,7 @@ country_event = { # Old Democrats Revolt
 	option = {
 		name = amcivwar.1018.b
 		ai_chance {
-		factor = 30
+		factor = 20
 			modifier = {
 				factor = 0
 				OR = {
@@ -4141,7 +4186,7 @@ country_event = { # Old Democrats Revolt
 	option = {
 		name = amcivwar.1018.c
 		ai_chance {
-		factor = 20
+		factor = 30
 			modifier = {
 				factor = 0
 				OR = {
@@ -8099,6 +8144,11 @@ country_event = { # Chief of Staff
 
 	option = { # Omar Bradly
 		name = amcivwar.71.a
+		trigger = {
+		NOT = {
+			has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		add_ideas = USA_Omar_Nelson_Bradley_cos
 	}
 	option = { # Marlin Craig
@@ -8138,6 +8188,11 @@ country_event = { # Chief of Army
 
 	option = { # Dwight Eisenhower
 		name = amcivwar.72.a
+		trigger = {
+		NOT = {
+			has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		add_ideas = USA_Dwight_D_Eisenhower_carm
 	}
 	option = { # Kenneth George Althaus
@@ -10741,7 +10796,7 @@ country_event = {
 		has_global_flag = USA_civil_war_over_flag
 		}
 		WCC = {
-		surrender_progress > 0.80
+		has_capitulated = yes
 		}
 	}
 
