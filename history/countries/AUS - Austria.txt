@@ -190,7 +190,6 @@ add_ideas = {
 	AUS_k_u_k_armee_bonus
 	AUS_vienna_circle
 	
-	AUS_fatherland_front
 	
 	#AUS_ethnic_warfare
 	#AUS_sick_man
