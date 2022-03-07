@@ -175,84 +175,6 @@ country_event = { #elections
 		}
 	}
 
-	option = {
-		name = col.2.e
-		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = COL_great_inheritance
-						option = COL_GREAT_INHERITANCE_LIBERAL
-					}
-					has_game_rule = {
-						rule = COL_great_inheritance
-						option = COL_GREAT_INHERITANCE_CONSERVATIVE
-					}
-					has_game_rule = {
-						rule = COL_great_inheritance
-						option = COL_GREAT_INHERITANCE_DICTATE
-					}
-					has_game_rule = {
-						rule = COL_great_inheritance
-						option = COL_GREAT_INHERITANCE_SOCIALISM
-					}
-				}
-			}
-		}
-		if = {
-			limit = {
-				has_country_flag = COL_picked_vargas
-			}
-			create_country_leader = {
-				name = "Carlos Cortés Vargas"
-				picture = "gfx/leaders/COL/Portrait_Colombia_Carlos_Cortes_Vargas.png"
-				expire = "1965.1.1"
-				ideology = militarism_subtype
-				traits = {}
-			}
-		}
-		else = {
-			create_country_leader = {
-				name = "Elíseo Arango Ramos"
-				desc = "POLITICS_ELISEO_RAMOS_DESC"
-				picture = "gfx/leaders/COL/Portrait_Columbia_Eliseo_Arango.png"
-				expire = "1965.1.1"
-				ideology = militarism_subtype
-				traits = {}
-			}
-		}
-		add_ideas = COL_Laureano_Eleuterio_Gomez_Castro_hog_npo
-		add_ideas = COL_Carlos_Eugenio_Restrepo_Restrepo_for_npo
-		add_ideas = COL_Carlos_Cortes_Vargas_eco_npo
-		add_ideas = COL_Alberto_Narino_Cheyne_sec_npo
-		set_politics = {
-			ruling_party = national_populist
-			elections_allowed = no
-		}
-		add_political_power = -100
-		hidden_effect = {
-			set_country_flag = COL_leopardos
-			news_event = worldnews.1251
-		}
-		add_popularity = {
-			ideology = national_populist
-			popularity = 0.08
-		}
-		create_corps_commander = {
-			name = "Carlos Cortés Vargas "
-			portrait_path = "gfx/leaders/COL/Portrait_Colombia_Carlos_Cortes_Vargas.png"
-			traits = {
-				harsh_leader
-			}
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 2
-		}
-	}
 
 	option = {
 		name = col.2.f
@@ -1407,57 +1329,7 @@ country_event = { #leopardos angry for expulsion
 	}
 }
 
-country_event = { #new leopardos leadership
-	id = col.27
-	immediate = { log = "[GetDateText]: [Root.GetName]: event col.27" }
-	title = col.27.t
-	desc = col.27.d
-	picture = GFX_report_event_generic_strike
 
-	is_triggered_only = yes
-
-	option = { #Alzate Avedano new leader
-		name = col.27.a
-		ai_chance = {
-			factor = 50
-		}
-		create_country_leader = {
-			name = "Gilberto Alzate Avendano"
-			picture = "gfx/leaders/COL/Portrait_Colombia_Gilberto_Alzate_Avendano.png"
-			expire = "1965.1.1"
-			ideology = militarism_subtype
-		}
-		set_politics = {
-			ruling_party = national_populist
-			elections_allowed = no
-		}
-		add_political_power = -25
-		add_stability = 0.03
-		add_popularity = {
-			ideology = national_populist
-			popularity = -0.03
-		}
-	}
-
-	option = { #Keep the current one
-		name = col.27.b
-		ai_chance = {
-			factor = 50
-		}
-		add_political_power = 25
-		add_stability = -0.03
-		add_popularity = {
-			ideology = national_populist
-			popularity = 0.03
-		}
-		hidden_effect = {
-			country_event = {
-				id = col.28
-				days = 3
-			}
-		}
-	}
-}
 
 country_event = { #Oacha coup
 	id = col.28
