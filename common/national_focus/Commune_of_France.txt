@@ -5537,32 +5537,6 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = FRA_strike_the_jews
-		text = FRA_strike_the_jews
-		icon = GFX_goals_FRA_strike_at_jews
-		cost = 5.00
-		prerequisite = {
-			focus = FRA_superior_french_culture
-		}
-		x = 71
-		y = 9
-		available = {
-			has_government = totalist
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FRA_strike_the_jews"
-			FRA = {
-				country_event = comfrance.932
-			}
-			add_political_power = 50
-			add_stability = -0.20
-			add_manpower = -75000
-		}
-	}
 	
 	focus = {
 		id = FRA_red_colonialism
@@ -5570,7 +5544,7 @@ focus_tree = {
 		icon = GFX_goals_FRA_red_africa
 		cost = 5.00
 		prerequisite = {
-			focus = FRA_strike_the_jews
+			focus = FRA_superior_french_culture
 		}
 		x = 72
 		y = 10
@@ -5689,41 +5663,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = FRA_empower_technocrats
-		text = FRA_empower_technocrats
-		icon = GFX_goals_FRA_technocrats
-		cost = 5.00
-		prerequisite = {
-			focus = FRA_crush_factionalism
-		}
-		x = 77
-		y = 9
-		available = {
-			has_government = totalist
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus FRA_empower_technocrats"
-			FRA = {
-				country_event = comfrance.934
-			}
-			add_research_slot = 1
-			add_tech_bonus = {
-				bonus = 1
-				uses = 1
-				category = construction_tech
-			}
-			add_tech_bonus = {
-				name = FRA_secret_weaponry
-				bonus = 1
-				uses = 1
-				category = electronics
-			}
-		}
-	}
+
 	
 	focus = {
 		id = FRA_establish_the_corporates
@@ -5731,7 +5671,7 @@ focus_tree = {
 		icon = GFX_goals_FRA_corpo
 		cost = 5.00
 		prerequisite = {
-			focus = FRA_empower_technocrats
+			focus = FRA_crush_factionalism
 		}
 		x = 76
 		y = 10
