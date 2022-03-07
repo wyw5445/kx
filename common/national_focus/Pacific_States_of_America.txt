@@ -12166,35 +12166,7 @@ focus_tree = {
 	
 	### Immigration ###
 
-	focus = {# Repatriation
-		id = CAL_repatriation
-		icon = GFX_mexican_repatriation
-		cost = 5.00
-		available = {
-		has_country_flag = PSA_1937_election_occured
-		}
-		mutually_exclusive = {
-		focus = CAL_quota_adjustments
-		focus = CAL_national_immigration_act
-		}
-		ai_will_do = {
-			factor = 5
-		}
-		available_if_capitulated = yes
-		cancel_if_invalid = yes
-		x = 18
-		y = 8
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus CAL_mexican_repatriation"
-			country_event = {
-			id = pacificstates.327
-			days = 5
-			}
-			add_stability = 0.05
-			increase_ruling_party_popularity_by_5 = yes
-			add_political_power = 50
-		}
-	}
+
 	
 	focus = {# Quota Adjustments
 		id = CAL_quota_adjustments
