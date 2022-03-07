@@ -3406,7 +3406,6 @@ country_event = { # The 1936 Election - You're Fucked (Or are you...)
 		}
 		custom_effect_tooltip = USA_democratic_deadlock_tooltip
 		set_country_flag = USA_had_1936_election
-		set_country_flag = USA_deadlock_norris
 		hidden_effect = {
 			create_country_leader = {
 				name = "George Norris"
@@ -9532,7 +9531,7 @@ country_event = { # Division Over Big Business Support
 
 	trigger = {
 		NOT = {
-			has_global_flag = USA_deadlock_norris
+			
 		}
 	}
 
@@ -10246,9 +10245,7 @@ country_event = { # The Upcoming Election
 		text = ustates.190.d.progs
 		trigger = {
 			has_government = social_democrat
-			NOT = {
-			has_country_flag = USA_deadlock_norris
-			}
+			
 		}
 	}
 	desc = { # Republican Party has the Presidency
@@ -10281,7 +10278,7 @@ country_event = { # The Upcoming Election
 	desc = { # Deadlock Norris Presidency
 		text = ustates.190.d.deadlocknorris
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 	}
 	picture = GFX_report_event_USA_congress
@@ -10321,7 +10318,7 @@ country_event = { # The Upcoming Election
 	option = { # Interesting...
 		name = ustates.190.b
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 		add_political_power = 5
 		hidden_effect = {
@@ -10365,7 +10362,7 @@ country_event = { # The Upcoming Election
 			NOT = {
 			OR = {
 			has_country_flag = USA_deadlock_garner
-			has_country_flag = USA_deadlock_norris
+			
 				}
 			}
 		}
@@ -10386,7 +10383,7 @@ country_event = { # The San Fran Conference
 	desc = { # Hearst
 		text = ustates.191.d.hearst
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 			}
 		}
 	picture = GFX_report_event_USA_congress
@@ -10433,7 +10430,7 @@ country_event = { # The San Fran Conference
 	option = { # Success
 		name = ustates.191.c
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 		custom_effect_tooltip = NPP_gains_strength
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
@@ -10444,7 +10441,7 @@ country_event = { # The San Fran Conference
 	option = { # Failure
 		name = ustates.191.e
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 		custom_effect_tooltip = NPP_loses_strength
 		add_popularity = { ideology = authoritarian_democrat popularity = -0.05 }
@@ -10467,7 +10464,7 @@ country_event = { # The Omaha Conference
 	desc = { # Pelley
 		text = ustates.192.d.pelley
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 	}
 	picture = GFX_report_event_USA_congress
@@ -10514,7 +10511,7 @@ country_event = { # The Omaha Conference
 	option = { # Success
 		name = ustates.192.c
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 		custom_effect_tooltip = NPP_gains_strength
 		add_popularity = { ideology = social_conservative popularity = 0.05 }
@@ -10538,7 +10535,7 @@ country_event = { # The Omaha Conference
 	option = { # Failure
 		name = ustates.192.e
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 		custom_effect_tooltip = NPP_loses_strength
 		add_popularity = { ideology = social_conservative popularity = -0.05 }
@@ -10570,7 +10567,7 @@ country_event = { # The Boston Conference
 	desc = { # Nock
 		text = ustates.193.d.dupont
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 	}
 	picture = GFX_report_event_USA_congress
@@ -10612,7 +10609,7 @@ country_event = { # The Boston Conference
 	option = { # Success
 		name = ustates.193.c
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 		custom_effect_tooltip = NPP_gains_strength
 		add_popularity = { ideology = paternal_autocrat popularity = 0.05 }
@@ -10623,7 +10620,7 @@ country_event = { # The Boston Conference
 	option = { # Failure
 		name = ustates.193.e
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 		custom_effect_tooltip = NPP_loses_strength
 		add_popularity = { ideology = paternal_autocrat popularity = -0.05 }
@@ -10646,7 +10643,7 @@ country_event = { # The St. Louis Convention
 	desc = { # National People's Party
 		text = ustates.194.d.npp
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 			}
 		}
 	picture = GFX_event_kiel_auditorium
@@ -10685,7 +10682,7 @@ country_event = { # The St. Louis Convention
 	desc = { # National People's Party
 		text = ustates.195.d.npp
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 	}
 	picture = GFX_event_kiel_auditorium
@@ -10749,7 +10746,7 @@ country_event = { # The St. Louis Convention
 	option = { # Henry Ford
 		name = ustates.195.f
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 		custom_effect_tooltip = NPP_lindbergh_gains_strength_2
 		add_popularity = { ideology = paternal_autocrat popularity = 0.01 }
@@ -10760,7 +10757,7 @@ country_event = { # The St. Louis Convention
 	option = { # William Randolph Hearst Jr.
 		name = ustates.195.g
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 		custom_effect_tooltip = NPP_lindbergh_gains_strength_1
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.01 }
@@ -10771,7 +10768,7 @@ country_event = { # The St. Louis Convention
 	option = { # Gerald L. K. Smith
 		name = ustates.195.h
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 		custom_effect_tooltip = NPP_murray_gains_strength_2
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.01 }
@@ -10783,7 +10780,7 @@ country_event = { # The St. Louis Convention
 	option = { # Samuel Green
 		name = ustates.195.i
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 		custom_effect_tooltip = NPP_murray_gains_strength_1
 		add_popularity = { ideology = national_populist popularity = 0.01 }
@@ -10806,7 +10803,7 @@ country_event = { # The St. Louis Convention
 	desc = { # National People's Party
 		text = ustates.196.d.npp
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 	}
 	picture = GFX_event_kiel_auditorium
@@ -10879,7 +10876,7 @@ country_event = { # The St. Louis Convention
 	option = { # William Randolph Hearst 
 		name = ustates.196.f
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 			has_country_flag = Hearst_endorses_NPP
 		}
 		custom_effect_tooltip = NPP_lindbergh_gains_strength_2
@@ -10891,7 +10888,7 @@ country_event = { # The St. Louis Convention
 	option = { # William Dudley Pelley
 		name = ustates.196.g
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 			has_country_flag = Pelley_endorses_NPP
 		}
 		custom_effect_tooltip = NPP_murray_gains_strength_2
@@ -10904,7 +10901,7 @@ country_event = { # The St. Louis Convention
 	option = { # Albert Nock
 		name = ustates.196.h
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 			has_country_flag = Nock_endorses_NPP
 		}
 		custom_effect_tooltip = NPP_lindbergh_gains_strength_1
@@ -10916,7 +10913,7 @@ country_event = { # The St. Louis Convention
 	option = { # Lothrop Stoddard
 		name = ustates.196.i
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 		custom_effect_tooltip = NPP_murray_gains_strength_1
 		add_popularity = { ideology = national_populist popularity = 0.01 }
@@ -10939,7 +10936,7 @@ country_event = { # The St. Louis Convention
 	desc = { # National People's Party
 		text = ustates.197.d.npp
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 	}
 	picture = GFX_event_kiel_auditorium
@@ -10991,7 +10988,7 @@ country_event = { # The St. Louis Convention
 	option = { # Fred Chase Koch
 		name = ustates.197.c
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 		custom_effect_tooltip = NPP_lindbergh_gains_strength_3
 		add_popularity = { ideology = paternal_autocrat popularity = 0.01 }
@@ -11007,7 +11004,7 @@ country_event = { # The St. Louis Convention
 	option = { # John E. Rankin
 		name = ustates.197.e
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 		custom_effect_tooltip = NPP_murray_gains_strength_3
 		add_popularity = { ideology = authoritarian_democrat popularity = 0.01 }
@@ -11035,7 +11032,7 @@ country_event = { # The St. Louis Convention, Presidential Nominee
 	desc = { # National People's Party
 		text = ustates.198.d.npp
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 			}
 		}
 	picture = GFX_event_kiel_auditorium
@@ -11097,7 +11094,7 @@ country_event = { # The St. Louis Convention, Presidential Nominee
 	option = { # NPP Party Nominee
 		name = ustates.198.b
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 			NOT = {
 			check_variable = { 
 				var = murray_NPP_strength
@@ -11269,7 +11266,7 @@ country_event = { # The St. Louis Convention, Deadlock
 	desc = { # National People's Party
 		text = ustates.199.d.npp
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 			}
 		}
 	picture = GFX_report_event_USA_congress
@@ -11309,7 +11306,7 @@ country_event = { # The St. Louis Convention, Deadlock
 	option = { # NPP Unity Candidate
 		name = ustates.199.c
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 			NOT = {
 				AND = {
 					has_country_flag = pelley_NPP_convention_speaker
@@ -11326,7 +11323,7 @@ country_event = { # The St. Louis Convention, Deadlock
 	option = { # NPP Unity Candidate
 		name = ustates.199.e
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 			AND = {
 					has_country_flag = pelley_NPP_convention_speaker
 					has_country_flag = smith_NPP_convention_speaker
@@ -11695,7 +11692,7 @@ country_event = { # 1940 Republican Primary
 			has_country_flag = USA_deadlock_garner
 		}
 		NOT  = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 		has_global_flag = USA_civil_war_avoided_flag
 	}
@@ -11821,7 +11818,7 @@ country_event = { # 1940 Democrat Primary
 			has_country_flag = USA_had_1940_election
 		}
 		NOT  = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 		has_global_flag = USA_civil_war_avoided_flag
 	}
@@ -11953,7 +11950,7 @@ country_event = { # 1940 Election
 		if = {
 			limit = {
 				NOT = {
-					has_country_flag = USA_deadlock_norris
+					
 				}
 			}
 			hidden_effect = {
@@ -11965,7 +11962,7 @@ country_event = { # 1940 Election
 		}
 		if = {
 			limit = {
-				has_country_flag = USA_deadlock_norris
+				
 			}
 			hidden_effect = {
 				country_event = {
@@ -12074,7 +12071,7 @@ country_event = { # 1940 Election
 			}
 			if = {
 				limit = {
-					has_country_flag = USA_deadlock_norris
+					
 				}
 				hidden_effect = {
 					country_event = {
@@ -12092,7 +12089,7 @@ country_event = { # 1940 Election
 				has_country_flag = USA_deadlock_garner
 			}
 			NOT  = {
-				has_country_flag = USA_deadlock_norris
+				
 			}
 		}
 		set_country_flag = USA_had_1940_election
@@ -12238,7 +12235,7 @@ country_event = { # 1940 Election
 		name = ustates.203.c
 		trigger = {
 			NOT  = {
-				has_country_flag = USA_deadlock_norris
+				
 			}
 		}
 		set_country_flag = USA_had_1940_election
@@ -12597,7 +12594,7 @@ country_event = { # 1940 Election
 	option = { # National People's Party
 		name = ustates.203.f
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 		set_country_flag = USA_had_1940_election
 		set_country_flag = USA_1940_election_NPP_victory
@@ -13255,7 +13252,7 @@ country_event = { # 1944 Republican Primary
 			has_country_flag = USA_deadlock_garner
 			}
 			NOT  = {
-			has_country_flag = USA_deadlock_norris
+			
 			}
 		}
 	}
@@ -13347,7 +13344,7 @@ country_event = { # 1944 Democrat Primary
 			has_country_flag = USA_had_1944_election
 		}
 		NOT  = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 	}
 
@@ -13721,7 +13718,7 @@ country_event = { # 1944 Election
 			}
 			if = {
 				limit = {
-					has_country_flag = USA_deadlock_norris
+					
 				}
 				hidden_effect = {
 					country_event = {
@@ -13737,7 +13734,7 @@ country_event = { # 1944 Election
 		set_country_flag = USA_had_1944_election
 		trigger = {
 			NOT  = {
-				has_country_flag = USA_deadlock_norris
+				
 			}
 			NOT  = {
 				has_country_flag = USA_deadlock_garner
@@ -13811,7 +13808,7 @@ country_event = { # 1944 Election
 		name = ustates.207.c
 		trigger = {
 			NOT  = {
-				has_country_flag = USA_deadlock_norris
+				
 			}
 		}
 		set_country_flag = USA_had_1944_election
@@ -13896,7 +13893,7 @@ country_event = { # 1944 Election
 			}
 			if = {
 				limit = {
-					has_country_flag = USA_deadlock_norris
+					
 				}
 				hidden_effect = {
 					country_event = {
@@ -14083,7 +14080,7 @@ country_event = { # 1944 Election
 	option = { # National People's Party
 		name = ustates.207.f
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 		set_country_flag = USA_had_1944_election
 		if = {
@@ -14898,7 +14895,7 @@ country_event = { # 1948 Republican Primary
 				has_country_flag = USA_deadlock_garner
 		}
 		NOT  = {
-				has_country_flag = USA_deadlock_norris
+				
 		}
 	}
 
@@ -15064,7 +15061,7 @@ country_event = { # 1948 Liberal Democrat Primary
 			has_country_flag = USA_had_1948_election
 		}
 		NOT  = {
-				has_country_flag = USA_deadlock_norris
+				
 		}
 	}
 
@@ -15190,7 +15187,7 @@ country_event = { # 1948 Conservative Democrat Primary
 			has_country_flag = USA_had_1948_election
 		}
 		NOT  = {
-				has_country_flag = USA_deadlock_norris
+				
 		}
 	}
 
@@ -15561,7 +15558,7 @@ country_event = { # 1948 election
 		name = ustates.213.b
 		trigger = {
 			NOT  = {
-				has_country_flag = USA_deadlock_norris
+				
 			}
 			NOT  = {
 				has_country_flag = USA_deadlock_garner
@@ -15641,7 +15638,7 @@ country_event = { # 1948 election
 		name = ustates.213.c
 		trigger = {
 			NOT  = {
-				has_country_flag = USA_deadlock_norris
+				
 			}
 		}
 		set_country_flag = USA_had_1948_election
@@ -15711,7 +15708,7 @@ country_event = { # 1948 election
 		name = ustates.213.e
 		trigger = {
 			NOT  = {
-				has_country_flag = USA_deadlock_norris
+				
 			}
 		}
 		set_country_flag = USA_had_1948_election
@@ -15931,7 +15928,7 @@ country_event = { # 1948 election
 	option = { # National People's Party
 		name = ustates.213.g
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 		set_country_flag = USA_had_1948_election
 		if = {
@@ -17571,7 +17568,7 @@ country_event = { # 1952 election
 	option = { # National People's Party
 		name = ustates.218.g
 		trigger = {
-			has_country_flag = USA_deadlock_norris
+			
 		}
 		set_country_flag = USA_had_1952_election
 		if = {
