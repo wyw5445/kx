@@ -4706,7 +4706,7 @@ focus_tree = {
 		id = BRG_end_party_politics
 		icon = GFX_goal_BRG_Ban_Parties
 		relative_position_id = BRG_the_ramsay_cabinet
-		x = 0
+		x = -2
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
@@ -4831,31 +4831,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Confront the Trojan Horse
-	focus = {
-		id = BRG_confront_the_trojan_horse
-		icon = GFX_goal_BRG_Trojan_Jew
-		relative_position_id = BRG_the_ramsay_cabinet
-		x = -2
-		y = 1
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = BRG_the_ramsay_cabinet }
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			country_event = basedbrit.11 
-  			add_political_power= 50  
-			add_war_support= 0.05
-			hidden_effect = {
-				country_event = {
-					id = basedbrit.99
-					days = 45
-				}
-			}
-		}
-	}
+	
 
 	#Focus for Local Authority
 	focus = {
@@ -4898,7 +4874,7 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = BRG_end_party_politics }
-		prerequisite = { focus = BRG_confront_the_trojan_horse }
+
 		relative_position_id = BRG_the_ramsay_cabinet
 		ai_will_do = {
 			factor = 1
