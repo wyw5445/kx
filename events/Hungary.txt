@@ -2372,22 +2372,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = {
-		name = kr.hungary.217.a #Disaster
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 100
-				has_game_rule = {
-					rule = HUN_independence
-					option = HUN_NATPOP
-				}
-			}
-		}
-		hidden_effect = {
-			country_event = { id = kr.hungary.218 days = 1 }
-		}
-	}
+	
 	option = {
 		ai_chance = {
 			factor = 50
