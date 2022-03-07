@@ -131,6 +131,7 @@ shared_focus = {
 		id = GRU_nmdvp_victory
 		icon = NMDVP
 		relative_position_id = GRU_first_congress_of_german_unions
+		 allow_branch = { has_country_flag = not_not_steam }
 		x = 24
 		y = 1
 		cost = 1
@@ -484,21 +485,6 @@ shared_focus = {
 		prerequisite = { focus = GRU_volksfuhrer  }
 	}
 
-	#I.v.A.
-shared_focus = {
-		id = GRU_iva
-		icon = GFX_GRU_iva-3955
-		relative_position_id = GRU_nmdvp_victory
-		x = -10
-		y = 2
-		cost = 5
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GRU_iva"
-			add_ideas = GRU_KOMMANDOWIRTSCHAFT_a
-		}
-
-		prerequisite = { focus = GRU_pieck }
-	}
 
 	#R.v.A.
 shared_focus = {
@@ -1488,6 +1474,7 @@ shared_focus = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRU_pieck_five_year_plans"
 			add_ideas = GRU_5_YEAR_PLAN
+			set_country_flag = GRU_INDUSTRIAL_CAPACITY_ENOUGH
 		}
 		prerequisite = { focus = GRU_pieck_brutalist_architecture  }
 		prerequisite = { focus = GRU_pieck_propaganda  }
@@ -6005,6 +5992,7 @@ shared_focus = {
 		id = GRU_NMDVP_PATH
 		icon = GFX_GRU_diplo_nmdvp
 		relative_position_id = GRU_nmdvp_victory
+		 allow_branch = { has_country_flag = not_not_steam }
 		x = 14
 		y = 11
 		available = {
