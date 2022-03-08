@@ -175,22 +175,7 @@ shared_focus = {
 		}
 	}
 	
-	#Breitspurbahnen
-	shared_focus = {
-		id = GRU_breitspurbahnen
-		icon = GFX_GRU_breitspurbahnen-3974
-		relative_position_id = GRU_volksfuhrer
-		x = -4
-		y = 4
-		cost = 5
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GRU_breitspurbahnen"
-			custom_effect_tooltip = GRU_tt_breitspurbahn_decisions
-			add_ideas = GRU_breitspur
-		}
-		prerequisite = { focus = GRU_mfsp } 
-		prerequisite = { focus = GRU_deutschsozialistische_architektur  }
-	}
+	
 
 	#Welfare
 shared_focus = {
@@ -208,43 +193,8 @@ shared_focus = {
 		prerequisite = { focus = GRU_deutsche_syndikalisiische_republik  }
 	}
 
-	#Staatsfeind Nr.1
-shared_focus = {
-		id = GRU_staatsfeind_nr1
-		icon = GFX_GRU_staatsfeind_nr1-4137
-		relative_position_id = GRU_volksfuhrer
-		x = 2
-		y = 1
-		cost = 5
-		completion_reward = {
-					log = "[GetDateText]: [Root.GetName]: Focus GRU_staatsfeind_nr1"
-					add_political_power = 50
-					add_stability = -0.15
-					add_manpower = -12000
-		}
 
-		prerequisite = { focus = GRU_volksfuhrer }
-	}
 
-	#Deutsche Arbeiterfront
-shared_focus = {
-		id = GRU_DAF
-		icon = GRU_DAF_ICON
-		relative_position_id = GRU_volksfuhrer
-		x = 4
-		y = 1
-		cost = 5
-		completion_reward = {
-					log = "[GetDateText]: [Root.GetName]: Focus GRU_DAF"
-					add_political_power = 25
-					add_stability = 0.05
-					add_ideas = GRU_DAF_KDF_ONE
-					country_event = { id =  rotermorgenmisc.8 }
-					custom_effect_tooltip = GRU_tt_DAF
-		}
-
-		prerequisite = { focus = GRU_volksfuhrer }
-	}
 
 
 	#R.v.A.
@@ -299,63 +249,9 @@ shared_focus = {
 		prerequisite = { focus = GRU_proclaim_victory_over_judeo_capitalism  focus = GRU_pieck  }
 	}
 
-	#R.v.A.
-shared_focus = {
-		id = GRU_National_Corporatism
-		icon = GRU_National_corporate
-		relative_position_id = GRU_nmdvp_victory
-		x = -6
-		y = 2
-		cost = 5
-		offset = {
-			x = -1
-			y = 0
-			trigger = {
-					has_country_flag = GRU_Heydrichs_Coup 
-				}
-			}
-		completion_reward = {
-					log = "[GetDateText]: [Root.GetName]: Focus GRU_rva"
-					add_ideas = GRU_National_socialism_one
-				}
 
-		prerequisite = { focus = GRU_proclaim_victory_over_judeo_capitalism }
-	}
 
-	#Found the FDJ
-shared_focus = {
-		id = GRU_found_the_fdj
-		icon = GFX_GRU_found_the_fdj-3948
-		relative_position_id = GRU_nmdvp_victory
-		x = 0
-		y = 2
-		cost = 5
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GRU_found_the_fdj"
-			add_ideas = GRU_FDJ
-		}
 
-		prerequisite = { focus = GRU_volkssturm   focus = GRU_proclaim_victory_over_judeo_capitalism  }
-	}
-
-	#Nationalize UFA
-shared_focus = {
-		id = GRU_nationalize_ufa
-		icon = GFX_GRU_nationalize_ufa-3952
-		relative_position_id = GRU_nmdvp_victory
-		x = -2
-		y = 2
-		cost = 5
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GRU_nationalize_ufa"
-			add_ideas = GRU_red_ufa
-			hidden_effect = {
-				country_event = { id =  rotermorgenmisc.39 days = 20 }
-			}
-		}
-
-		prerequisite = { focus = GRU_proclaim_victory_over_judeo_capitalism  }
-	}
 
 	#Kommandowirtschaft
 shared_focus = {
@@ -418,222 +314,8 @@ shared_focus = {
 		prerequisite = { focus = GRU_factory_network_unions focus = GRU_national_labour_service }
 	}
 	
-shared_focus = {
-		id = GRU_national_socialist_market_economics
-		icon = GRU_National_Socialism
-		relative_position_id = GRU_nmdvp_victory
-		x = -6
-		y = 4
-		cost = 5
-		offset = {
-			x = -1
-			y = 0
-			trigger = {
-					has_country_flag = GRU_Heydrichs_Coup 
-				}
-			}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GRU_national_socialist_market_economics"
-			add_ideas = closed_economy
-			remove_ideas = GRU_RUINED_ECONOMY_TOALLY_BETTER
-			swap_ideas = {
-							remove_idea = GRU_National_socialism_two
-							add_idea = GRU_National_socialism_three
-						}
-		}
 
-		prerequisite = { focus = GRU_agrarian_subsides }
-		prerequisite = { focus = GRU_national_labour_service }
-	}
-	
-shared_focus = {
-		id = GRU_organic_growth
-		icon = GRU_ORGANIC_GROWITH
-		relative_position_id = GRU_nmdvp_victory
-		x = -7
-		y = 5
-		cost = 5
-		offset = {
-			x = -1
-			y = 0
-			trigger = {
-					has_country_flag = GRU_Heydrichs_Coup 
-				}
-			}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GRU_organic_growth"
-					random_owned_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 1
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-						}
-					random_owned_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 1
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_owned_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 1
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-						}
-					random_owned_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_owned_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 1
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_owned_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 1
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_owned_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 1
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_owned_state = {
-							limit = {
-									free_building_slots = {
-											building = industrial_complex
-											size > 1
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_owned_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_owned_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-						}
-					random_owned_state = {
-							limit = {
-									free_building_slots = {
-											building = arms_factory
-											size > 0
-											include_locked = yes
-										}
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = arms_factory
-									level = 1
-									instant_build = yes
-								}
-						}
 
-		}
-
-		prerequisite = { focus = GRU_technocrat_influence }
-		prerequisite = { focus = GRU_national_socialist_market_economics }
-	}
-	
 	
 shared_focus = {
 		id = GRU_planned_growth
@@ -1298,32 +980,7 @@ shared_focus = {
 		prerequisite = { focus = GRU_rva }
 	}
 	
-shared_focus = {
-		id = GRU_agrarian_subsides
-		icon = GRU_agrarian_subsides
-		relative_position_id = GRU_nmdvp_victory
-		x = -5
-		y = 3
-		cost = 5
-		offset = {
-			x = -2
-			y = 0
-			trigger = {
-					has_country_flag = GRU_Heydrichs_Coup 
-				}
-			}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GRU_agrarian_subsides"
-			add_tech_bonus = {
-				bonus = 1
-				uses = 2
-				category = industry
-			}
-		}
 
-		prerequisite = { focus = GRU_rva }
-		prerequisite = { focus = GRU_National_Corporatism }
-	}
 	
 shared_focus = {
 		id = GRU_national_labour_service
