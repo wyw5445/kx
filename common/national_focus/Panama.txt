@@ -523,6 +523,7 @@ focus_tree = {
 		cost = 5
 	}
 	focus = {
+		
 		id = PAN_forming_new_government
 		relative_position_id = PAN_conservative_government
 		icon = GFX_RUS_Strong_Government
