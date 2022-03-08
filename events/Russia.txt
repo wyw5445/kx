@@ -260,59 +260,7 @@ country_event = { #Kerensky
 			name = "Alexandr Kerensky"
 		}
 	}
-	option = {
-		name = russia.5.a
-		ai_chance = {
-			factor = 99
-			modifier = {
-                factor = 0
-                has_game_rule = {
-                    rule = RUS_kerensky_assasination
-                    option = RUS_KERENSKY_LIVE_BITCH
-                }
-            }
-		}
-		country_event = {
-			id = russia.6
-			days = 1
-		}
-		add_ideas = {
-			rus_political_instability
-		}
-		effect_tooltip = { kill_country_leader = yes }
-		add_manpower = -1
-		set_country_flag = RUS_KRSKY_DEATH
-		hidden_effect = {
-			create_country_leader = {
-				name = "The Senate"
-				desc = "POLITICS_SENATE_DESC"
-				picture = "gfx/leaders/RUS/Portrait_RUS_The_Senate.png"
-				expire = "1965.1.1"
-				ideology = social_liberal_subtype
-				traits = {}
-			}
-			create_country_leader = {
-				name = "The Senate"
-				desc = "POLITICS_SENATE_DESC"
-				picture = "gfx/leaders/RUS/Portrait_RUS_The_Senate.png"
-				expire = "1965.1.1"
-				ideology = social_democrat_subtype
-				traits = {}
-			}
-			random_other_country = {
-				news_event = {
-					id = worldnews.15
-					days = 1
-				}
-			}
-			RUS = {
-				country_event = {
-					id = worldtension.10
-					days = 1
-				}
-			}
-		}
-	}
+
 	
 	option = { #Lives 
 		name = russia.5.b
