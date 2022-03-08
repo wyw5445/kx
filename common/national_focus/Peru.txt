@@ -2584,33 +2584,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PRU_kick_out_asian_parasites
-		icon = GFX_goal_step_on_skull
-		prerequisite = {
-			focus = PRU_tear_down_aguerism
-		}
-		available = {
-			has_country_flag = PRU_flores_became_caudillo
-			has_government = national_populist
-		}
-		relative_position_id = PRU_peruvian_brotherhood
-		x = -3
-		y = 13
-		cost = 7
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus PRU_kick_out_asian_parasites"
-			every_owned_state = {
-				limit = {
-					is_core_of = ROOT
-				}
-				add_manpower = -2000
-			}
-			add_timed_idea = { idea = PRU_seized_asian_assets days = 400 }
-		}
-		search_filters = { FOCUS_FILTER_MANPOWER }
-	}
-
-	focus = {
 		id = PRU_peruvian_corporatism
 		icon = GFX_goal_production
 		prerequisite = {
