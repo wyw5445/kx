@@ -215,17 +215,7 @@ option = {
 			    set_country_flag = CIV_Duke_BM
 			}
 	}
-option = {
-		name = civ.4.e #SLAVERY
-		add_popularity = { 
-			    ideology = market_liberal
-				popularity = 0.10
-			}
-			hidden_effect = {
-			    set_country_flag = CIV_Slavery_BM
-			}
-	}
-}
+
 
 # What About the Rest
 country_event = {
