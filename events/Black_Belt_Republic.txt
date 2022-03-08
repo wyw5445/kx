@@ -131,31 +131,7 @@ country_event = { # Nationalist Campaign
 
 	is_triggered_only = yes
 	
-	option = { # Tolerate them
-		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = 0
-				OR = {
-					has_game_rule = {
-						rule = BBR_political
-						option = BBR_POLITICAL_PATH_ABB
-					}				
-					has_game_rule = {
-						rule = BBR_political
-						option = BBR_POLITICAL_PATH_AMERICANIST
-					}
-				}				
-			}
-		}
-		name = bbr.4.a
-		add_manpower = 1500
-		add_war_support = 0.05
-		add_popularity = { ideology = national_populist popularity = 0.05 }
-		hidden_effect = {
-			country_event = { id = bbr.10 days = 5 }
-		}
-	}
+	
 	option = { # Arrest them
 		ai_chance = {
 			factor = 25
@@ -262,17 +238,7 @@ country_event = { # Garvey Denounces Us
 			}
 		}
 	}
-	option = { # Appoint the ABB
-		ai_chance = {
-			factor = 25
-		}
-		name = bbr.5.b
-		add_war_support = 0.05
-		add_popularity = { ideology = totalist popularity = 0.03 }
-		hidden_effect = {
-			country_event = { id = bbr.6 days = 5 }
-		}
-	}
+	
 }
 
 country_event = { # Nationalists Released
@@ -370,58 +336,6 @@ country_event = { # Duse Muhammad Elected
 	}
 }
 
-country_event = { # ABB in Power
-	id = bbr.8
-	immediate = {log = "[GetDateText]: [Root.GetName]: event bbr.7"}
-	title = bbr.8.t
-	desc = bbr.8.d
-	picture = GFX_event_BBR_ABB
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-	
-	option = { # No, we stay the course
-		name = bbr.8.a
-		hidden_effect = {
-			create_country_leader = {
-				name = "Duse Muhammad"
-				desc = "POLITICS_DUSE_MUHAMMAD_DESC"
-				picture = "gfx/leaders/BBR/Duse_Mohamed_Ali.png"
-				expire = "1965.1.1"
-				ideology = tot_left_panafricanism_subtype
-				traits = { the_pharoah }
-			}
-			set_party_name = {
-			ideology = totalist
-			long_name = BBR_ABB_totalist_party_long
-			name = BBR_ABB_totalist_party }
-			remove_all_ministers = yes
-			hidden_effect = {
-				add_ideas = BBR_Duse_Mohamed_Ali_hog_tot
-				add_ideas = BBR_Cyril_Briggs_for_tot
-				add_ideas = BBR_Wilfred_Adolphus_Domingo_eco_tot
-				add_ideas = BBR_Richard_B_Moore_sec_tot
-			}
-			set_cosmetic_tag = BBR_totalist_abb
-		}
-		set_politics = {
-			ruling_party = totalist
-			elections_allowed = no
-		}
-		hidden_effect = {
-			country_event = {
-				id = bbr.1213
-				days = 70
-			}
-		}
-		add_manpower = -1000
-		add_war_support = 0.05
-		add_stability = -0.03
-		add_popularity = { ideology = totalist popularity = 0.08 }
-		set_country_flag = BBR_abb_in_charge
-	}
-}
 
 country_event = { # Potential Allies
 	id = bbr.8000
@@ -3503,32 +3417,8 @@ country_event = { # sun ra bottom text
 	id = bbr.2000
 	immediate = {log = "[GetDateText]: [Root.GetName]: event bbr.2000"}
 	title = bbr.2000.t
-	desc = { # none legit prez
-		text = bbr.2000.d_a
-		trigger = {
-			NOT = {
-				OR = {
-				has_government = authoritarian_democrat
-			has_government = social_conservative
-			has_government = market_liberal
-			has_government = social_liberal
-			has_government = social_democrat
-				}
-			}
-		}
-	}
-	desc = { # none legit prez
-		text = bbr.2000.d_b
-		trigger = {
-				OR = {
-				has_government = authoritarian_democrat
-			has_government = social_conservative
-			has_government = market_liberal
-			has_government = social_liberal
-			has_government = social_democrat
-				}
-		}
-	}
+	desc = bbr.2000.d_a
+	
 	
 	picture = GFX_report_event_sun_ra
 
@@ -3538,23 +3428,7 @@ country_event = { # sun ra bottom text
 	option = { #impressive, very nice
 	name = bbr.2000.a
 	add_political_power = 50
-	hidden_effect = {
-		if = {
-			limit = {
-				OR = {
-				has_government = authoritarian_democrat
-			has_government = social_conservative
-			has_government = market_liberal
-			has_government = social_liberal
-			has_government = social_democrat
-				}
-			}
-			country_event = {
-				id = bbr.2020
-				days = 10
-			}
-		}
-	}
+	
 	}
 }
 
