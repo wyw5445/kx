@@ -7972,38 +7972,8 @@ country_event = { # Radical Split
 				}	
 			}
 		}
-		name = newengland.120.c
-		add_political_power = 30
-		add_stability = 0.02
-		set_politics = {
-			ruling_party = national_populist
-			election_frequency = 48
-			elections_allowed = yes
-		}
-		set_party_name = {
-			ideology = national_populist
-			long_name = NEE_Nordic_League_party_long
-			name = NEE_Nordic_League_party 
-		}
-		create_country_leader = {
-			name = "Lothrop Stoddard"
-			desc = "POLITICS_LOTHROP_STODDARD_DESC"
-			picture = "gfx/leaders/NEE/Lothrop_Stoddard.png"
-			expire = "1965.1.1"
-			ideology = national_populist_subtype
-			traits = { popular_author }
-		}
-		hidden_effect = {
-			set_cosmetic_tag = NEE_nordic_league_tag_national_populist
-			set_country_flag = NEE_stoddard_takeover
-		}
-		hidden_effect = {
-			add_ideas = NEE_Henry_H_Goddard_hog_npo
-			add_ideas = NEE_Charles_Benedict_Davenport_for_npo
-			add_ideas = NEE_Harry_H_Laughlin_eco_npo
-			add_ideas = NEE_John_Bell_sec_npo
-			}
-	}
+	}	
+		
 }
 
 country_event = { # Remnant Leader Election
