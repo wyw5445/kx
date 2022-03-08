@@ -1073,96 +1073,10 @@ focus_tree = {
 				}
 
 	}
-	focus = {
-		id = UKR_Exp_Kulaks
-		icon = GFX_goal_UKR_kulak_expropriation
-		cost = 5
-		prerequisite = {
-			focus = UKR_Popular_Front
-		}
-		mutually_exclusive = {
-			focus = UKR_Tax_Kulaks
-		}
-		x = -7
-		y = 4
-		relative_position_id = UKR_Our_Future
-                        available = {
-                                        NOT = { has_country_flag = UKR_Chekhivsky_Invited }
-			}
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					log = "[GetDateText]: [Root.GetName]: Focus UKR_Exp_Kulaks"
-					UKR = {
-							country_event = {
-									id = ukraine.78
-								}
-						}
-					add_stability = 0.06
-					add_popularity = {
-							ideology = totalist
-							popularity = 0.02
-						}
-				}
+	
 
-	}
 	focus = {
-		id = UKR_Tax_Kulaks
-		icon = GFX_goal_UKR_kulak_tax
-		cost = 5
-		prerequisite = {
-			focus = UKR_Popular_Front
-		}
-		mutually_exclusive = {
-			focus = UKR_Exp_Kulaks
-		}
-		x = -5
-		y = 4
-		relative_position_id = UKR_Our_Future
-                        available = {
-                                        NOT = { has_country_flag = UKR_Chekhivsky_Invited }
-			}
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					log = "[GetDateText]: [Root.GetName]: Focus UKR_Tax_Kulaks"
-					add_stability = 0.03
-					UKR = {
-							country_event = {
-									id = ukraine.80
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = UKR_Coll_Prog
-		icon = GFX_goal_UKR_colectivization
-		cost = 5
-		prerequisite = {
-			focus = UKR_Exp_Kulaks
-		}
-		x = -8
-		y = 5
-		relative_position_id = UKR_Our_Future
-			available = {
-					has_country_flag = UKR_Taxation_fail
-                                        NOT = { has_country_flag = UKR_Chekhivsky_Invited }
-				}
-			ai_will_do = {
-					factor = 10
-				}
-			completion_reward = {
-					log = "[GetDateText]: [Root.GetName]: Focus UKR_Coll_Prog"
-					add_stability = -0.06
-					remove_ideas = another_crisis_kulaks
-				}
-
-	}
-	focus = {
-		id = UKR_Fate_Monarchy
+		id = UKR_Language_Issue
 		icon = GFX_goal_UKR_monarchy_question
 		cost = 5
 		prerequisite = {
