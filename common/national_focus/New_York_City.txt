@@ -3144,59 +3144,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = NYC_control_the_drug_trade
-		icon = GFX_goal_PAN_cash_crop_but_real
-		available = {
-			has_government = paternal_autocrat
-		}
-		prerequisite = {
-			focus = NYC_free_city
-		}
-		relative_position_id = NYC_mobster_takeover
-		x = -1
-		y = 5
-		cost = 5
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NYC_control_the_drug_trade"
-			add_ideas = NYC_control_the_drug_trade
-		}
-	}
 	
-	focus = {
-		id = NYC_human_trafficking
-		icon = GFX_goal_PAN_expand_product
-		available = {
-			has_government = paternal_autocrat
-		}
-		prerequisite = {
-			focus = NYC_free_city
-		}
-		relative_position_id = NYC_mobster_takeover
-		x = 1
-		y = 5
-		cost = 5
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus NYC_human_trafficking"
-			add_ideas = NYC_human_trafficking
-			hidden_effect = {
-				country_event = {
-					id = NYC.59
-					days = 60
-				}
-			}
-		}
-	}
 	
 	focus = {
 		id = NYC_hub_of_global_crime
@@ -3205,14 +3153,11 @@ focus_tree = {
 			has_government = paternal_autocrat
 		}
 		prerequisite = {
-			focus = NYC_human_trafficking
-		}
-		prerequisite = {
-			focus = NYC_control_the_drug_trade
+			focus = NYC_free_city
 		}
 		relative_position_id = NYC_mobster_takeover
 		x = 0
-		y = 6
+		y = 5
 		cost = 5
 
 		ai_will_do = {
