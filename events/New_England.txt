@@ -11037,36 +11037,7 @@ country_event = {# Boston Massacre
 		set_country_flag = NEE_BOSTON_SUCSESS
 		set_country_flag = NEE_non_radical_extremists_flag
 	}
-	option = {
-		name = newengland.223.b #Something... unexpected happens
-		ai_chance = {
-			factor = 50
-			modifier = {
-                factor = 0
-				OR = {
-					has_game_rule = {
-						rule = NEE_start_path
-						option = NEE_CAN_MONARCHY
-					}
-					has_game_rule = {
-						rule = NEE_start_path
-						option = NEE_WASHINGTON_MONARCHY
-					}	
-					has_game_rule = {
-						rule = NEE_start_path
-						option = NEE_MILITARY_COUP
-					}
-				}
-            }
-		}
-		set_country_flag = NEE_non_radical_extremists_flag
-		hidden_effect = {
-			country_event = {
-				id = newengland.224
-				days = 5
-			}
-		}
-	}
+	
 }
 
 country_event = {# Lovecraft takes over!
