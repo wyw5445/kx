@@ -883,47 +883,16 @@ focus_tree = {
 	}
 
 	focus = {
-		id = LIB_ultimatum_to_foreigners
-		icon = GFX_goal_army_guy_2
-		cost = 5.80
-		prerequisite = { focus = LIB_freemason_coup }
-		available = {
-			has_war = no
-			has_government = national_populist
-		}
-		relative_position_id = LIB_freemason_coup
-		x = -1
-		y = 1
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIB_ultimatum_to_foreigners"
-			country_event = LIB.12
-			hidden_effect = {
-				country_event = {
-					id = LIBflavor.9
-					days = 60
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = LIB_no_democracy
 		icon = GFX_goal_DEI_focus_disband_volksraad
 		cost = 5.80
-		prerequisite = { focus = LIB_ultimatum_to_foreigners }
+		prerequisite = { focus = LIB_freemason_coup }
 		available = {
 			has_government = national_populist
 		}
-		relative_position_id = LIB_ultimatum_to_foreigners
-		x = 0
-		y = 1
+
+		x = 13
+		y = 2
 
 		ai_will_do = {
 			factor = 10
@@ -4091,10 +4060,6 @@ focus_tree = {
 			ideology = authoritarian_democrat
 			popularity = 0.05
 		}
-			country_event = {
-					id = fire.3
-					days = 1
-				}
 				}
 		ai_will_do = {
 			factor = 1
@@ -5454,93 +5419,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 
-	focus = {
-		id = LIB_african_homestead_act
-		icon = GFX_goal_LIB_african_homestead_act
-		cost = 5
-		x = 0
-		y = 2
-		relative_position_id = LIB_american_refugee_crisis
-		prerequisite = {
-			focus = LIB_american_refugee_crisis_some
-			focus = LIB_american_refugee_crisis_all
-		}
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIB_african_homestead_act"
-			add_political_power = 150
-			increase_ruling_party_popularity_by_5 = yes	
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-
-	focus = {
-		id = LIB_native_removal_act
-		icon = GFX_goal_LIB_native_removal_act
-		cost = 5
-		x = 1
-		y = 3
-		relative_position_id = LIB_american_refugee_crisis
-		available = {
-			NOT = {
-				has_government = social_liberal
-				has_government = radical_socialist
-			}
-		}
-		prerequisite = {
-			focus = LIB_african_homestead_act
-		}
-		mutually_exclusive = {
-			focus = LIB_native_assimilation_act
-		}
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIB_native_removal_act"
-			set_country_flag = LIB_native_removal_act
-			custom_effect_tooltip = unlock_native_removal_act_decisions_tooltip
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-
-	focus = {
-		id = LIB_native_assimilation_act
-		icon = GFX_goal_LIB_native_assimilation_act
-		cost = 5
-		x = -1
-		y = 3
-		relative_position_id = LIB_american_refugee_crisis
-		prerequisite = {
-			focus = LIB_african_homestead_act
-		}
-		mutually_exclusive = {
-			focus = LIB_native_removal_act
-		}
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus LIB_native_removal_act"
-			set_country_flag = LIB_native_assimilation_act
-			custom_effect_tooltip = unlock_native_assimilation_act_decisions_tooltip
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
 
 	focus = {
 		id = LIB_invite_exiles
@@ -5550,8 +5428,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = LIB_american_refugee_crisis
 		prerequisite = {
-			focus = LIB_native_assimilation_act
-			focus = LIB_native_removal_act
+			focus = LIB_america
 		}
 
 		ai_will_do = {
