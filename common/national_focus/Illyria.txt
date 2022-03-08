@@ -3783,5 +3783,391 @@ focus_tree = {
 			
 		}
 	}
+	###PATAUT###
+	focus = {
+		id = CRO_reign_begins
+		icon = GFX_goal_CRO_reign_begins
+		x = 101
+		y = 1
+		cost = 2.9
+		
+		available = {
+			has_country_flag = CRO_military_takeover
+		}
+		
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 100
+			country_event = reign.1
+		}
+	}
 	
+	focus = {
+		id = CRO_state_enemies
+		icon = GFX_goal_CRO_state_enemies
+		x = 0
+		y = 1
+		relative_position_id = CRO_reign_begins
+		cost = 2.9
+		
+		available = {
+			has_country_flag = CRO_military_takeover
+		}
+		
+		prerequisite = { focus = CRO_reign_begins }
+		
+		completion_reward = {
+			add_stability = 0.05
+			hidden_effect = {
+				country_event = { id = reign.2 days = 3 }
+			}
+		}
+	}
+	
+	focus = {
+		id = CRO_bosnian_enemy
+		icon = GFX_goal_CRO_bosnian_enemy
+		x = 0
+		y = 2
+		relative_position_id = CRO_reign_begins
+		cost = 2.9
+		
+		available = {
+			has_country_flag = CRO_military_takeover
+			has_war_with = BOS
+		}
+		
+		prerequisite = { focus = CRO_state_enemies }
+		
+		mutually_exclusive = { focus = CRO_slovene_enemy focus = CRO_republican_enemy }
+		
+		completion_reward = {
+			add_stability = 0.05
+			hidden_effect = {
+				country_event = { id = reign.3 days = 3 }
+			}
+		}
+	}
+	
+	focus = {
+		id = CRO_slovene_enemy
+		icon = GFX_goal_CRO_slovene_enemy
+		x = -2
+		y = 2
+		relative_position_id = CRO_reign_begins
+		cost = 2.9
+		
+		available = {
+			has_country_flag = CRO_military_takeover
+			has_war_with = SLO
+		}
+		
+		prerequisite = { focus = CRO_state_enemies }
+		
+		mutually_exclusive = { focus = CRO_bosnian_enemy focus = CRO_republican_enemy }
+		
+		completion_reward = {
+			add_stability = 0.05
+			hidden_effect = {
+				country_event = { id = reign.4 days = 3 }
+			}
+		}
+	}
+	
+	focus = {
+		id = CRO_republican_enemy
+		icon = GFX_goal_CRO_republican_terrorists
+		x = 2
+		y = 2
+		relative_position_id = CRO_reign_begins
+		cost = 2.9
+		
+		available = {
+			has_country_flag = CRO_military_takeover
+			has_war_with = CRR
+		}
+		
+		prerequisite = { focus = CRO_state_enemies }
+		
+		mutually_exclusive = { focus = CRO_slovene_enemy focus = CRO_bosnian_enemy }
+		
+		completion_reward = {
+			add_stability = 0.05
+			hidden_effect = {
+				country_event = { id = reign.5 days = 3 }
+			}
+		}
+	}
+	
+	focus = {
+		id = CRO_death_squads
+		icon = GFX_goal_CRO_death_squads
+		x = -1
+		y = 3
+		relative_position_id = CRO_reign_begins
+		cost = 2.9
+		
+		available = {
+			has_country_flag = CRO_military_takeover
+		}
+		
+		prerequisite = {
+			focus = CRO_bosnian_enemy
+			focus = CRO_republican_enemy
+			focus = CRO_slovene_enemy
+		}
+		
+		
+		completion_reward = {
+			add_ideas = CRO_death_squadrons
+		}
+	}
+	
+	focus = {
+		id = CRO_pavelics_men
+		icon = GFX_goal_CRO_pavelics_men
+		x = -1
+		y = 4
+		relative_position_id = CRO_reign_begins
+		cost = 2.9
+		
+		available = {
+			has_country_flag = CRO_military_takeover
+		}
+		
+		prerequisite = {
+			focus = CRO_death_squads
+		}
+		
+		
+		completion_reward = {
+			country_event = { id = reign.6 days = 1 }
+		}
+	}
+	
+	focus = {
+		id = CRO_scorched_earth
+		icon = GFX_goal_DSR_Wipe_the_slate_clean_burn_it_all_down
+		x = 1
+		y = 3
+		relative_position_id = CRO_reign_begins
+		cost = 2.9
+		
+		available = {
+			has_country_flag = CRO_military_takeover
+		}
+		
+		prerequisite = {
+			focus = CRO_bosnian_enemy
+			focus = CRO_republican_enemy
+			focus = CRO_slovene_enemy
+		}
+		
+		
+		completion_reward = {
+			add_ideas = CRO_scorching_earth
+			hidden_effect = {
+				country_event = {
+					id = reign.12
+					days = 6
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = CRO_hell_earth
+		icon = GFX_goal_CRO_hell_on_earth
+		x = 1
+		y = 4
+		relative_position_id = CRO_reign_begins
+		cost = 2.9
+		
+		available = {
+			has_country_flag = CRO_military_takeover
+		}
+		
+		prerequisite = {
+			focus = CRO_scorched_earth
+		}
+		
+		
+		completion_reward = {
+			add_war_support = 0.1
+			BOS = {
+				add_stability = -0.08
+			}
+			CRR = {
+				add_stability = -0.08
+			}
+			SLO = {
+				add_stability = -0.08
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	focus = {
+		id = CRO_invade_citizenry
+		icon = GFX_goal_CRO_army_of_no_limits
+		x = 0
+		y = 5
+		relative_position_id = CRO_reign_begins
+		cost = 2.9
+		
+		available = {
+			has_country_flag = CRO_military_takeover
+		}
+		
+		prerequisite = {
+			focus = CRO_hell_earth
+		}
+		
+		prerequisite = {
+			focus = CRO_pavelics_men
+		}
+		
+		
+		completion_reward = {
+			add_stability = -0.05
+			add_ideas = CRO_all_serve
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.1
+			}
+		}
+	}
+	
+	focus = {
+		id = CRO_all_illyrians
+		icon = GFX_goal_CRO_all_illyrians
+		x = 1
+		y = 6
+		relative_position_id = CRO_reign_begins
+		cost = 2.9
+		
+		available = {
+			has_country_flag = CRO_military_takeover
+		}
+		
+		prerequisite = {
+			focus = CRO_invade_citizenry
+		}
+		
+		
+		completion_reward = {
+			add_stability = -0.05
+			add_political_power = 100
+			hidden_effect = {
+				country_event = {
+					id = reign.7
+					days = 5
+				}
+				
+				country_event = {
+					id = reign.9
+					days = 13
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = CRO_hunt_dissenters
+		icon = GFX_goal_CRO_hunt_down_anticitizens
+		x = -1
+		y = 6
+		relative_position_id = CRO_reign_begins
+		cost = 2.9
+		
+		available = {
+			has_country_flag = CRO_military_takeover
+		}
+		
+		prerequisite = {
+			focus = CRO_invade_citizenry
+		}
+		
+		
+		completion_reward = {
+			country_event = reign.10
+		}
+	}
+	
+	focus = {
+		id = CRO_end_secrecy
+		icon = GFX_goal_CRO_end_public_secrecy
+		x = 0
+		y = 7
+		relative_position_id = CRO_reign_begins
+		cost = 2.9
+		
+		available = {
+			has_country_flag = CRO_military_takeover
+		}
+		
+		prerequisite = {
+			focus = CRO_all_illyrians
+		}
+		
+		prerequisite = {
+			focus = CRO_hunt_dissenters
+		}
+		
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = -80
+			hidden_effect = {
+				country_event = {
+					id = reign.11
+					days = 20
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = CRO_reeducation_torture
+		icon = GFX_goal_CRO_uncriticized_state
+		x = 0
+		y = 8
+		relative_position_id = CRO_reign_begins
+		cost = 2.9
+		
+		available = {
+			has_country_flag = CRO_military_takeover
+		}
+		
+		prerequisite = {
+			focus = CRO_end_secrecy
+		}
+		
+		
+		
+		completion_reward = {
+			add_stability = 0.1
+			custom_effect_tooltip = CRO_perfect_state
+			set_politics = { ruling_party = national_populist }
+				add_popularity = {
+					ideology = national_populist
+					popularity = 0.67
+				}
+				hidden_effect = {
+				remove_all_ministers = yes
+				add_ideas = {
+						CRO_Ante_Pavelic_hog_npo
+						CRO_Milan_Budak_for_npo
+						CRO_Eugen_Dido_Kvaternik_eco_npo
+						CRO_Andrija_Artukovic_sec_npo
+					}
+				}
+				country_event = reign.11
+			}
+		}
+	}
 }
