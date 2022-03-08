@@ -1061,48 +1061,6 @@ CRO_fair_equal_desc:0 "Now we have achieved the dream that we have been striving
 CRO_federation_dream:0 "Dreams of a Federation"
 CRO_federation_dream_desc:0 "Many within our government have dreams of turning Illyria from a federation of Bosnia, Croatia and Montenegro into a federation of the entire Southern Balkans. Could these dreams become reality? Could we finally bring peace, stability and unity to the Balkan?"
 
-CRO_reign_begins:0 "The Reign of Terror Begins"
-CRO_reign_begins_desc:0 "The Government has failed at dealing with the crisis in Bosnia, and due to the failure, the Military and Poglavnik Pavelić has had to step in to save the nation from collapse. Now that they are in charge, the nation must be forcibly pacified to ensure safety and security."
-
-CRO_state_enemies:0 "Enemies of the State"
-CRO_state_enemies_desc:0 "From all corners of our nation, Enemies of the State try and break our glorious nation and wiggle out from our thumb. They all must be destroyed, and examples made of them. We must teach them a lesson that none of them will soon forget. "
-
-CRO_slovene_enemy:0 "The Slovene Traitors"
-CRO_slovene_enemy_desc:0 "The Traitors in Slovenia have existed for too long. Their rebellion must die now, and Illyria must be finally rid of the Slovene Scourge that has plagued our fair nation for so long. It is time to go North, to restore order to the Anarchy."
-
-CRO_bosnian_enemy:0 "The Bosnian Radicals"
-CRO_bosnian_enemy_desc:0 "The Radicals in Bosnia-Herzegovina have rebelled against our nation for too long. We have rallied our forces and now it is time to take them out. Bosnia is rightfully Illyrian, and we will fight and die for what’s rightfully ours no matter what the citizens say."
-
-CRO_republican_enemy:0 "The Republican Terrorists"
-CRO_republican_enemy_desc:0 "The Republican Terrorists are the biggest threat that our Nation is facing at the moment. They stand in the way of peace, prosperity and Poglavnik Pavelić. They must be completely destroyed. With them gone Illyria can be whole again, and we can focus at the job at hand: Destroying all who oppose our reign. "
-
-CRO_death_squads:0 "Deploy the Odred Smrti"
-CRO_death_squads_desc:0 "People who go against the state’s will must be put down. They cannot continue to live; they must be taken out. To accomplish this Pavelic’s men must roam the countryside putting down any trace of dissent. And keep Illyria’s populace pure and loyal."
-
-CRO_scorched_earth:0 "Set the Earth Alight"
-CRO_scorched_earth_desc:0 "Fire: It cleanses all. The Earth must be charred into ash to keep the enemy from using our land to sustain themselves. They are cockroaches, pests that must have their habitat destroyed before we can finally eradicate them too. "
-
-CRO_pavelics_men:0 "Pavelić's Executioners"
-CRO_pavelics_men_desc:0 "Pavelić's Executioners. The most feared. The six and only six. They patrol the night, they end the worst anticitizens, they keep the peace, they rule Illyria with their velveted iron grip. Nobody can outrun them, play safe and the Executioners will not hurt you. Dissent, and your head will be on Pavelić's bedroom walls. The Executioners answer only to Pavelić. The sighting of one will send you whiter than a skeleton."
-
-CRO_hell_earth:0 "Hell on Earth"
-CRO_hell_earth_desc:0 "The bounds between the Dark Afterlife and Earth are becoming less clear by the day. Our Scorched Earth tactics have turned the earth into a living hell, turned the ground black and consumed the skies with fire and brimstone. Hell is here and is bound to come to your home if you dare oppose the will of Poglavnik Pavelić."
-
-CRO_invade_citizenry:0 "The Army of No Limits"
-CRO_invade_citizenry_desc:0 "Our Army has no limits; they can accomplish any task underneath the sun. With our powerful army at our side, all will quake in fear when they hear the name Illyria. We are strong, we are pure. And with the army at our side, we are all-powerful. "
-
-CRO_all_illyrians:0 "We Are All Illyrians"
-CRO_all_illyrians_desc:0 "All of the citizens within Illyria’s borders are Illyrian. No matter if they are Bosnian, Montenegrin or ese. Illyria is one, one people, one state, one nation of pure citizens that know their state is supreme. All bow to Poglavnik Pavelić and the Military. "
-
-CRO_hunt_dissenters:0 "Hunt Down Anticitizens"
-CRO_hunt_dissenters_desc:0 "Anticitizens terrorize Illyria, they are not like us; they are subhuman monsters that need to be taken out. Once they are gone, the Illyrian state can breathe once more. The citizens can know that they are safe now that traitors to Illyria have been taken out."
-
-CRO_end_secrecy:0 "End Public Secrecy"
-CRO_end_secrecy_desc:0 "The Public has lived their private lives for too long. To make sure that all citizens are loyal, we must intrude on every aspect of their lives and ensure loyalty for all citizens. Public Secrecy is can lead to traitors existing within the public, something we cannot tolerate."
-
-CRO_reeducation_torture:0 "The Uncriticized State"
-CRO_reeducation_torture_desc:0 "Now that we have won against Anticitizens and Traitors, Poglavnik Pavelić can take direct control of Illyria. The Military no longer needs to control Illyria, for the nation is safe. The Party of Rights can take direct control of the nation, and Pavelić can be the unquestioned, unchallenged leader. "
-
 CRO_illyrian_aeronautics:0"Illyrian Aeronautics"
 CRO_illyrian_aeronautics_desc:0"The field of aviation was born almost in time for the Weltkrieg. Even two decades after this war, it is still new, and all nations strive to be ready for the next time their planes may be called to war. We must, too. We must find a solid Illyrian Air Force to organize them."
 
@@ -1160,55 +1118,6 @@ CRO_attempt_silence_bosnians:0 "[BOS.GetFlag] Attempt to Silence Bosnian Opposit
 CRO_raid_republicans:0 "[CRR.GetFlag] Mount a Raid on Republican Strongholds"
 
 ##### REIGN OF TERROR EVENTS #####
-
-reign.1.t:0 "A Reign of Peace and Prosperity"
-reign.1.d:0 "The Republic has ended. Our glorious military and the Nationalists at their side, famous for stamping out Austrian flames, is tired of the credit that the Republic itself took for beating Austria. The people were praised, not the military. It has all been undone now - our military of liberty has its place in the sun. Under Ante Pavelić, the Illyrian State will rule all the Southern Slavs in peace, held together by strength and teamwork, all under the face of Pavelić, the saviour and liberator of Illyria. All shall tremble under Illyria, all shall bow to it. All hail!"
-reign.1.a:0 "Loyalty is required."
-
-reign.2.t:0 "Crushing Political Opposition"
-reign.2.d:0 "It seems some of these "citizens" haven't got the idea of peace and harmony. Dissent rules the places untouched by our fair hand, and even still anywhere the darkness is there is dissent. Syndicalists, Republicans, the lot - all seek to destroy the State. The first victim were the Republican politicians - ready to be exterminated. Republicans lay dead in our prisons, torched by our light - unable to convert. Next - the Syndicalists we suspected to exist, and especially, end that Tito once and for all... but there were none. Tito was gone. He and his Syndicalists are to return another day, the interrogated say..."
-reign.2.a:0 "Where did Tito go?"
-
-reign.3.t:0 "Those Rabid Bosnians!"
-reign.3.d:0 "Bosnians. Rabid, berserk. Epitome of animals. But there is a process to re-humanize these rabid beasts, all with the light wielded by glorious Marshal Ante Pavelić. However, this was a mere theory. We tried on their soldiers we captured, except those animals threw curses and insults at our well-meaning officers. It is not possible to re-humanize Bosnians. We must come up with a new plan, and that plan is simply to put them out of this world, onto another world."
-reign.3.a:0 "Put them down."
-
-reign.4.t:0 "Ever-watching Slovenes"
-reign.4.d:0 "Slovenia. Land of the always-watching eyes. Spies. You name it, if it can watch, they have it. And here they use it against us, calling our good regime "wicked" and "the most evil in the world". What they speak of is certainly not us, but their armies wage war against us. Those Slovenes have no idea who they are messing with, and when they do, it will be too late for them. They will be in the ditches they belong in, or without those all-seeing eyes. No Slovenian will make it out without reprisal."
-reign.4.a:0 "Sever their eyes."
-
-reign.5.t:0 "Traitors to Peace and Prosperity"
-reign.5.d:0 "The worst case of all are those Southern "Croats". They are no Croats. They are traitors. They challenge the peace and prosperity we promise to the land of Illyria. When we kill one, another two appear. They are endless. But they aren't. Nothing is eternal, except the Illyrian State, and they don't seem to realize that. Soon enough they will submit to the bright lights, and be brought into the reign once and for all. These Republicans have no chance at winning whatsoever."
-reign.5.a:0 "Punish them."
-
-reign.6.t:0 "Pavelić's Personal Executioners"
-reign.6.d:0 "Pavelić's Executioners. The most feared. The six and only six. They patrol the night, they end the worst anticitizens, they keep the peace, they rule Illyria with their velveted iron grip. Nobody can outrun them, play safe and the Executioners will not hurt you. Dissent, and your head will be on Pavelić's bedroom walls. The Executioners answer only to Pavelić. The sighting of one will send you whiter than a skeleton. Their aura promotes cooperation. Everyone except Pavelić must answer to the Executioners."
-reign.6.a:0 "Only the worst face this axe."
-
-reign.7.t:0 "Citizens Fleeing to Serbia"
-reign.7.d:0 "These pesky dissenters have made an even more heinous crime today. They have attempted to leave Illyria, and flee to Serbia. Serbian authorities accept them and listen to their lies! It cannot continue. After we strike down our enemies, we will take back our population now in Serbia. Fleeing eastwards, through Bosnia, anywhere in the dark, that is where they go. They seek to run from us, but there is no hiding or running from light. Light will always find you. Serbians, consider this a warning."
-reign.7.a:0 "Mistakes were made."
-
-reign.8.t:0 "Terrified Croats at the Gates"
-reign.8.d:0 "Frantic border officers have reported back to [SER.GetLeader] to tell him of the immense amounts of Croats attempting to get into our nation. They beg and plead; they seek to escape the armies of their State coming eastwards to retrieve them. Our border patrol officers have heard reports of genocide, death squads, arson, and dystopia. The king has let them in, to let them seek asylum in Serbia. The Illyrian State has denounced our actions, calling these dissenting Croats their property. The free world must hear about this, before the black tentacles of this revealed State reach us."
-reign.8.a:0 "Dystopia in the Balkans."
-
-reign.9.t:0 "The Propaganda Campaign"
-reign.9.d:0 "Ah yes, propaganda. The way to get the masses to believe. It can be used for either good or for bad, and of course we're using it for good, to keep the dissidents away, or even better, to convert them. From the speakers of our cities, we see the conversion of the dissidents into loyal subjects of the State, loyal to Pavelić. It is a wonderful system, on the daily basis, none are able to hide or get away from our speakers, the sound of peace and prosperity. Cooperation is not recommended, it is required."
-reign.9.a:0 "The only right answer is "yes sir!""
-
-reign.10.t:0 "Death to Dissent"
-reign.10.d:0 "Dissent. The enemy of progress, peace, and prosperity. Anticitizens are the root of all evil, and the only way to teach them a lesson is to show every other anticitizen their fate. In the streets, propaganda leaflets fly, and the crack of a rifle is heard every once in a while, to signify the death of yet another stain in the ranks of the pure, clean peoples of Illyria. Illyria is just for Illyrians; none others except our Slavs are permitted to be in our country. The bodies of the dead anticitizens rot and burn in piles, in heaps of dead to intimidate other potential wrongdoers of the eventual outcome of their dissent."
-reign.10.a:0 "You aren't as safe as you think."
-
-reign.11.t:0 "Our Beloved State"
-reign.11.d:0 "It's done - the dissenting ranks are no more. All are loyal to Pavelić. Pavelić is supreme. Pavelić is eternal. All hail lord Pavelić! Not even the Powerful Military can stop Pavelic’s. And as the day draws longer, the Army stands down and allows Pavelić to completely control all of Illyria. The heaps of corpses burn no more and exist no more. Pavelic is no longer a figurehead for the Army. He is the State. Our citizens live in harmony, our nation prospers. §bNobody will ever find out what happened here.§!"
-reign.11.a:0 "All hail Pavelić!"
-
-reign.12.t:0 "The Black Earth"
-reign.12.d:0 "The Earth is blackening as the fires lit by the military blaze and light camps, vehicles, and evils alike. They purge the evil, and reduce into ash, a material more worthy than they. They run in fear. Alight cities light the night sky, empty and smoldering.  Their sustenance burn, as does their will to keep fighting. As the fire burns brighter, so does the State's spirits. We are destined to win.  Eventually, the fauna and flora will have regenerated, and the world will be back to normal. Everything will be fine for us, but perhaps not for them - but that doesn’t matter one bit."
-reign.12.a:0 "It is perfect for us."
-
 
 
 
